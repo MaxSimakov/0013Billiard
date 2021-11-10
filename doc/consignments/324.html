@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="ru">
+
+<!-- Mirrored from tt.bb-crm.com/doc/consignments/324 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 10:29:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1 , user-scalable=0, shrink-to-fit=no">
+    <meta name="csrf-token" content="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+    <title>BilliardCRM</title>
+
+    
+
+
+    <link rel="stylesheet" href="../../old/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../old/bower_components/Ionicons/css/ionicons.min.css">
+
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="../../../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="../../../cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" media="screen" type="text/css" href="../../old/css/demo.css"/>
+    
+
+    <link rel="stylesheet" href="../../../cdn.jsdelivr.net/gh/fancyapps/fancybox%403.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="../../css/app.css" rel="stylesheet">
+    <link href="../../old/css/main.css" rel="stylesheet">
+    <link href="../../css/my.css" rel="stylesheet">
+    <script>
+        var LanguneThisJs = 'ru';
+    </script>
+    
+    <script src="../../libs/jquery.min.js"></script>
+    <script src="../../libs/jquery.fancybox.min.js"></script>
+    <script src="../../js/app.js" defer></script>
+
+</head>
+<body class="sidebar-mini">
+<div class="wrapper" id="app">
+    <header class="header__main">
+        <a href="../../index.html" class="logo decstor">
+            <span class="logo-mini"><img src="../../img/logo%201.png" alt="logo"></span>
+            <span class="logo-lg"><img src="../../img/logo%201.png" alt="logo"><span>BilliardCRM</span></span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" id="SidebarToggle" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    
+
+                    <messages-header></messages-header>
+
+                    <li class="calendar-menu  d-none d-md-block ">
+                        <clock-header></clock-header>
+                    </li>
+                    <li class="time-menu  d-none d-md-block "></li>
+                    <li class="locale">
+                        <a class="" href="../../customers.html?lng=ua">
+                            <span class="time">UA</span>
+                        </a>
+                    </li>
+                    <li class="locale">
+                        <a class=" active " href="../../categories.html?lng=ru">
+                            <span class="time">RU</span>
+                        </a>
+                    </li>
+                                            <li class="user user-menu">
+                            <a href="#">
+                                <span>Aleks Majlo</span>
+                            </a>
+                        </li>
+                                        <li>
+                        <a href="../../logout.html"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                           data-toggle="control-sidebar">Выход</a>
+                    </li>
+                    <form id="logout-form" action="http://tt.bb-crm.com/logout" method="POST" style="display: none;">
+                        <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar__main">
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+                <li class="notChild">
+                    <a href="../../index.html">
+                        <img src="../../img/logo%201.png" alt="logo">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../../customers.html">
+                        <img src="../../img/menu2.png" alt="База клиентов">
+                        <span>База клиентов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../../booking.html">
+                        <img src="../../img/menu3.png" alt="Бронирования">
+                        <span> Бронирования</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../../table_open.html">
+                        <img src="../../img/menu4.png" alt="Открытые столы">
+                        <span>Открытые столы</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="../../bars.html">
+                        <img src="../../img/menu5.png" alt="Открытые заказы">
+                        <span>Открытые заказы</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../../img/menu6.png" alt="Конфигурация">
+                        <span>Конфигурация</span>
+                        <span class="pull-right-container">
+							    <i class="fa fa-angle-left pull-right"></i>
+						</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../../tables.html">Бильярдные столы</a></li>
+                        <li><a href="../../users.html"> Пользователи бэк-офиса</a></li>
+                        <li><a href="../../sockets.html">Оборудование</a></li>
+                        
+                        <li><a href="../../coupons.html">Купоны</a></li>
+                        <li><a href="../../keys.html">Апи ключи</a></li>
+                        <li><a target="__blank" href="../../logs.html">Log</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../../img/menu7.png" alt="Склад">
+                        <span>Cклад</span>
+                        <span class="pull-right-container">
+                                                <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../../ingredients.html"> <span>Инградиенты</span></a></li>
+                        <li><a href="../../products.html"> <span>Товары</span></a></li>
+                        <li><a href="../../categories.html"> <span>Категории</span></a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../../img/menu8.png" alt="Документы">
+                        <span>Документы</span>
+                        <span class="pull-right-container">
+                                                                   <i class="fa fa-angle-left pull-right"></i>
+                                                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="../acts.html">
+                                <span>Акты</span></a>
+                        </li>
+                        <li>
+                            <a href="../consignments.html">
+                                <span>Расходные накладные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../purchaseinvoices.html">
+                                <span>Приходная накладная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../writeofs.html">
+                                <span>Списание продуктов</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="notChild">
+                    <a href="../../orders.html">
+                        <img src="../../img/menu9.png" alt="История заказов">
+                        <span>История заказов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../../changes.html">
+                        <img src="../../img/menu10.png" alt="Смена">
+                        <span>Смены</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../../img/menu11.png" alt="Аналитика">
+                        <span>Аналитика</span>
+                        <span class="pull-right-container">
+                                               <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="../../analytics/attendance.html">
+                                <span>Посещаемость заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../analytics/popularity-tables.html">
+                                <span>Популярность столов</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../analytics/incomes.html">
+                                <span>Доход заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../analytics/employees.html">
+                                <span>Доход бильярдной по сотрудникам</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class=" wrapper__main">
+        <section class="content__main">
+                <div class="user">
+        <div class="user__title">
+            <h2> Расходная накладная #324  </h2>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-7 col-xs-xs-12">
+                <div class="filter-block filter-worker">
+                    <div class="filter-form">
+                        <div class="row">
+                            <div class="col-xs-5 col-xs-xs-xs-6">
+                                <label>Сотрудник</label>
+                            </div>
+                            <div class="col-xs-7 col-xs-xs-xs-6">
+                                <p> Альбина Кандабаева</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-5 col-xs-xs-xs-6">
+                                <label>Дата и время инвентаризации</label>
+                            </div>
+                            <div class="col-xs-7 col-xs-xs-xs-6">
+                                <p>2021-05-24 11:36:25</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-5 col-xs-xs-12 actOne">
+                <div class="blue worker">
+                    <form method="get" id="searchform">
+                        <input name="title" type="text" value="">
+                                                <button type="submit">
+                            <img src="../../img/search.png" alt="search">
+                        </button>
+                    </form>
+                    <div class="worker-button">
+                        <a class="worker__button worker__export" href="../consignment/export/324.html">
+                            <img src="../../img/export.png" alt="colendar">
+                            <span>Экспорт в excel</span>
+                        </a>
+                        <doc-print id="print" header="Акт #324  2021-05-24 11:36:25"></doc-print>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                Сортировка:
+                <b>
+                                            Наименование                                    </b>
+                -
+                <b>
+                                                                         c последних                                            
+                </b>
+            </div>
+        </div>
+        <div class="user_table acts__table" id="print">
+            <table>
+                <thead>
+                   <tr>
+                    <td>
+                        Наименование                        <form style="display:none;" action="http://tt.bb-crm.com/doc/writeof/sort"  method="post">
+                            <input type="hidden" name="sort" value="title">
+                            <input type="hidden" name="type" value="">
+                            <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                        </form>
+                                                    <a href="#" data-type="desc" class="DocSortOrder categoryDocSortOrderDESC">
+                                <img src="../../img/arrey.png" alt="arrey">
+                            </a>
+                                            </td>
+                    <td>
+                        Категория                        <form style="display:none;" action="http://tt.bb-crm.com/doc/writeof/sort"  method="post">
+                            <input type="hidden" name="sort" value="cat">
+                            <input type="hidden" name="type" value="">
+                            <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                        </form>
+                                                    <a href="#" data-type="desc" class="DocSortOrder categoryDocSortOrderDESC">
+                                <img src="../../img/arrey.png" alt="arrey">
+                            </a>
+                                            </td>
+                    <td>
+                        Количество                    </td>
+                    <td>
+                        Цена                        <form style="display:none;" action="http://tt.bb-crm.com/doc/writeof/sort"  method="post">
+                            <input type="hidden" name="sort" value="price">
+                            <input type="hidden" name="type" value="">
+                            <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                        </form>
+                                                    <a href="#" data-type="desc" class="DocSortOrder categoryDocSortOrderDESC">
+                                <img src="../../img/arrey.png" alt="arrey">
+                            </a>
+                                            </td>
+
+                    <td>
+                        Скидка %                    </td>
+
+                    <td>
+                        Вместе                        <form style="display:none;" action="http://tt.bb-crm.com/doc/writeof/sort"  method="post">
+                            <input type="hidden" name="sort" value="total">
+                            <input type="hidden" name="type" value="">
+                            <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                        </form>
+                                                    <a href="#" data-type="desc" class="DocSortOrder categoryDocSortOrderDESC">
+                                <img src="../../img/arrey.png" alt="arrey">
+                            </a>
+                                            </td>
+                </tr>
+                </thead>
+
+                <tbody>
+
+                                    <tr>
+                        <td>RED BULL  ЕНЕРГЕТИЧНИЙ НАПІЙ</td>
+                        <td>
+                                                            Соки та води
+                                                    </td>
+                        <td>1</td>
+                        <td>39 грн.</td>
+                        <td>0 %</td>
+                        <td>39 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>БЕХЕРОВКА 50г</td>
+                        <td>
+                                                            решта алкоголь
+                                                    </td>
+                        <td>3</td>
+                        <td>40 грн.</td>
+                        <td>0 %</td>
+                        <td>120 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ВІСКІ JACK DANIELS 50Г</td>
+                        <td>
+                                                            віскі
+                                                    </td>
+                        <td>2</td>
+                        <td>70 грн.</td>
+                        <td>0 %</td>
+                        <td>140 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ВІСКІ JAMESON 50Г</td>
+                        <td>
+                                                            віскі
+                                                    </td>
+                        <td>2</td>
+                        <td>72 грн.</td>
+                        <td>0 %</td>
+                        <td>144 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ВІСКІ WILLIAM LAWSON’S super spiced 50Г</td>
+                        <td>
+                                                            віскі
+                                                    </td>
+                        <td>2</td>
+                        <td>42 грн.</td>
+                        <td>0 %</td>
+                        <td>84 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ВАРЕНИКИ ДОМАШНІ з маслом I сметаною</td>
+                        <td>
+                                                            Кухня
+                                                    </td>
+                        <td>4</td>
+                        <td>55 грн.</td>
+                        <td>0 %</td>
+                        <td>220 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ВАФЕЛЬКА / КЕКС</td>
+                        <td>
+                                                            Снеки
+                                                    </td>
+                        <td>1</td>
+                        <td>15 грн.</td>
+                        <td>0 %</td>
+                        <td>15 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ВОДА BON-AQVA В АСОРТИМЕНТІ 0.5</td>
+                        <td>
+                                                            Соки та води
+                                                    </td>
+                        <td>6</td>
+                        <td>15 грн.</td>
+                        <td>0 %</td>
+                        <td>90 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ГОРІЛКА GREEN DAY 50Г</td>
+                        <td>
+                                                            горілка-коньяк
+                                                    </td>
+                        <td>4</td>
+                        <td>25 грн.</td>
+                        <td>0 %</td>
+                        <td>100 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ГОРІЛКА MARLIN 50Г</td>
+                        <td>
+                                                            горілка-коньяк
+                                                    </td>
+                        <td>4</td>
+                        <td>25 грн.</td>
+                        <td>0 %</td>
+                        <td>100 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ГОРІШКИ 100г SOLTINO</td>
+                        <td>
+                                                            Снеки
+                                                    </td>
+                        <td>2</td>
+                        <td>35 грн.</td>
+                        <td>0 %</td>
+                        <td>70 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ГОРІШКИ АРАХІС 30г МАЛЕНЬКІ</td>
+                        <td>
+                                                            Снеки
+                                                    </td>
+                        <td>2</td>
+                        <td>20 грн.</td>
+                        <td>0 %</td>
+                        <td>40 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ДЖЕРКІ</td>
+                        <td>
+                                                            Снеки
+                                                    </td>
+                        <td>1</td>
+                        <td>50 грн.</td>
+                        <td>0 %</td>
+                        <td>50 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>КАВА</td>
+                        <td>
+                                                            Кава
+                                                    </td>
+                        <td>4</td>
+                        <td>22 грн.</td>
+                        <td>0 %</td>
+                        <td>88 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>КАВА З МОЛОКОМ</td>
+                        <td>
+                                                            Кава
+                                                    </td>
+                        <td>9</td>
+                        <td>27 грн.</td>
+                        <td>0 %</td>
+                        <td>243 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>КАВА ЛАТТЕ</td>
+                        <td>
+                                                            Кава
+                                                    </td>
+                        <td>1</td>
+                        <td>32 грн.</td>
+                        <td>0 %</td>
+                        <td>32 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>КАРТОПЛЯ ФРІ З КЕТЧУПОМ</td>
+                        <td>
+                                                            Кухня
+                                                    </td>
+                        <td>2</td>
+                        <td>45 грн.</td>
+                        <td>0 %</td>
+                        <td>90 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>КОКА-КОЛА 0,25 В СКЛІ</td>
+                        <td>
+                                                            Соки та води
+                                                    </td>
+                        <td>4</td>
+                        <td>20 грн.</td>
+                        <td>0 %</td>
+                        <td>80 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>КОКА КОЛА</td>
+                        <td>
+                                                            Соки та води
+                                                    </td>
+                        <td>5</td>
+                        <td>20 грн.</td>
+                        <td>0 %</td>
+                        <td>100 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>КОНЬЯК АДЖАРI 5* 50Г</td>
+                        <td>
+                                                            горілка-коньяк
+                                                    </td>
+                        <td>5</td>
+                        <td>37 грн.</td>
+                        <td>0 %</td>
+                        <td>185 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>КОНЬЯК ЖАН ЖАК МЕДОВИЙ 50Г</td>
+                        <td>
+                                                            горілка-коньяк
+                                                    </td>
+                        <td>10</td>
+                        <td>32 грн.</td>
+                        <td>0 %</td>
+                        <td>320 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ЛІКЕР JAGERMEISTER 50Г</td>
+                        <td>
+                                                            решта алкоголь
+                                                    </td>
+                        <td>8</td>
+                        <td>50 грн.</td>
+                        <td>0 %</td>
+                        <td>400 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ЛИМОН ПОРЦІЯ 1/2</td>
+                        <td>
+                                                            Чай, фрукти, гренадін
+                                                    </td>
+                        <td>1</td>
+                        <td>15 грн.</td>
+                        <td>0 %</td>
+                        <td>15 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>МАХАН</td>
+                        <td>
+                                                            Снеки
+                                                    </td>
+                        <td>2</td>
+                        <td>50 грн.</td>
+                        <td>0 %</td>
+                        <td>100 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>НАПІЙ &quot;FUZЕ TEА&quot; 0,5 В АСОРТИМЕНТІ</td>
+                        <td>
+                                                            Соки та води
+                                                    </td>
+                        <td>4</td>
+                        <td>23 грн.</td>
+                        <td>0 %</td>
+                        <td>92 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ПЕЛЬМЕНІ З МАСЛОМ І СМЕТАНОЮ</td>
+                        <td>
+                                                            Кухня
+                                                    </td>
+                        <td>9</td>
+                        <td>55 грн.</td>
+                        <td>0 %</td>
+                        <td>495 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ПЕЧИВО</td>
+                        <td>
+                                                            Снеки
+                                                    </td>
+                        <td>1</td>
+                        <td>38 грн.</td>
+                        <td>0 %</td>
+                        <td>38 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ПИВО STELLA ARTOIS РОЗЛИВНЕ 0,5</td>
+                        <td>
+                                                            Пиво
+                                                    </td>
+                        <td>44</td>
+                        <td>47 грн.</td>
+                        <td>0 %</td>
+                        <td>2068 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ПИВО STELLA ARTOIS РОЗЛИВНЕ 0,33</td>
+                        <td>
+                                                            Пиво
+                                                    </td>
+                        <td>3</td>
+                        <td>32 грн.</td>
+                        <td>0 %</td>
+                        <td>96 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ПИВО STELLA ARTOIS б/а</td>
+                        <td>
+                                                            Пиво
+                                                    </td>
+                        <td>3</td>
+                        <td>47 грн.</td>
+                        <td>0 %</td>
+                        <td>141 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ПИВО КОРОНА</td>
+                        <td>
+                                                            Пиво
+                                                    </td>
+                        <td>4</td>
+                        <td>50 грн.</td>
+                        <td>0 %</td>
+                        <td>200 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ПИВО ЧЕРНІГІВСЬКЕ Біле нефільтроване РОЗЛИВНЕ 0,5</td>
+                        <td>
+                                                            Пиво
+                                                    </td>
+                        <td>28</td>
+                        <td>40 грн.</td>
+                        <td>0 %</td>
+                        <td>1120 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>РОМ CAPTAIN MORGAN spiced gold 50г</td>
+                        <td>
+                                                            ром
+                                                    </td>
+                        <td>2</td>
+                        <td>45 грн.</td>
+                        <td>0 %</td>
+                        <td>90 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>РОМ OAKHERT 50Г</td>
+                        <td>
+                                                            ром
+                                                    </td>
+                        <td>6</td>
+                        <td>42 грн.</td>
+                        <td>0 %</td>
+                        <td>252 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>СІК Rich 200МЛ В АСОРТИМЕНТІ</td>
+                        <td>
+                                                            Соки та води
+                                                    </td>
+                        <td>8</td>
+                        <td>20 грн.</td>
+                        <td>0 %</td>
+                        <td>160 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>СМЕТАНА 50г</td>
+                        <td>
+                                                            Кухня
+                                                    </td>
+                        <td>1</td>
+                        <td>12 грн.</td>
+                        <td>0 %</td>
+                        <td>12 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>СОУС 50г</td>
+                        <td>
+                                                            Кухня
+                                                    </td>
+                        <td>1</td>
+                        <td>12 грн.</td>
+                        <td>0 %</td>
+                        <td>12 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>СУДЖУК</td>
+                        <td>
+                                                            Снеки
+                                                    </td>
+                        <td>3</td>
+                        <td>50 грн.</td>
+                        <td>0 %</td>
+                        <td>150 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>СУХАРИКИ ХРУСteam В АСОРТИМЕНТІ</td>
+                        <td>
+                                                            Снеки
+                                                    </td>
+                        <td>2</td>
+                        <td>20 грн.</td>
+                        <td>0 %</td>
+                        <td>40 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ТАРІЛКА ФРІ (картопляні нагетси з чедером, чіпси з лавашу, бургерний соус)</td>
+                        <td>
+                                                            Кухня
+                                                    </td>
+                        <td>1</td>
+                        <td>95 грн.</td>
+                        <td>0 %</td>
+                        <td>95 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ТАРІЛКА ФРІ (карт фрі, мисл. ковбаски, чіпси з лавашу, кетчуп)</td>
+                        <td>
+                                                            Кухня
+                                                    </td>
+                        <td>2</td>
+                        <td>98 грн.</td>
+                        <td>0 %</td>
+                        <td>196 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ТАРІЛКА ФРІ (цибулеві кіл, карт. фрі, чіпси з лавашу, кетчуп)</td>
+                        <td>
+                                                            Кухня
+                                                    </td>
+                        <td>1</td>
+                        <td>94 грн.</td>
+                        <td>0 %</td>
+                        <td>94 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ФАНТА</td>
+                        <td>
+                                                            Соки та води
+                                                    </td>
+                        <td>2</td>
+                        <td>20 грн.</td>
+                        <td>0 %</td>
+                        <td>40 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ЧІПСИ Lays</td>
+                        <td>
+                                                            Снеки
+                                                    </td>
+                        <td>1</td>
+                        <td>32 грн.</td>
+                        <td>0 %</td>
+                        <td>32 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ЧАЙ ПАКЕТОВАНИЙ</td>
+                        <td>
+                                                            Чай, фрукти, гренадін
+                                                    </td>
+                        <td>8</td>
+                        <td>15 грн.</td>
+                        <td>0 %</td>
+                        <td>120 грн.</td>
+                    </tr>
+                                    <tr>
+                        <td>ШВЕПС 0,25 В СКЛІ</td>
+                        <td>
+                                                            Соки та води
+                                                    </td>
+                        <td>4</td>
+                        <td>23 грн.</td>
+                        <td>0 %</td>
+                        <td>92 грн.</td>
+                    </tr>
+                                </tbody>
+               <tfoot>
+                 <tr>
+                     <td colspan="2">Всего вместе</td>
+                      <td colspan="2">7850 грн.</td>
+                 </tr>
+               </tfoot>
+            </table>
+        </div>
+    </div>
+        </section>
+    </div>
+</div>
+</body>
+
+<!-- Mirrored from tt.bb-crm.com/doc/consignments/324 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 10:29:35 GMT -->
+</html>

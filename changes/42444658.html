@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="ru">
+
+<!-- Mirrored from tt.bb-crm.com/changes/4244?page=2 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 12:26:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1 , user-scalable=0, shrink-to-fit=no">
+    <meta name="csrf-token" content="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+    <title>BilliardCRM</title>
+
+    
+
+
+    <link rel="stylesheet" href="../old/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../old/bower_components/Ionicons/css/ionicons.min.css">
+
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="../../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="../../cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" media="screen" type="text/css" href="../old/css/demo.css"/>
+    
+
+    <link rel="stylesheet" href="../../cdn.jsdelivr.net/gh/fancyapps/fancybox%403.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="../css/app.css" rel="stylesheet">
+    <link href="../old/css/main.css" rel="stylesheet">
+    <link href="../css/my.css" rel="stylesheet">
+    <script>
+        var LanguneThisJs = 'ru';
+    </script>
+    
+    <script src="../libs/jquery.min.js"></script>
+    <script src="../libs/jquery.fancybox.min.js"></script>
+    <script src="../js/app.js" defer></script>
+
+</head>
+<body class="sidebar-mini">
+<div class="wrapper" id="app">
+    <header class="header__main">
+        <a href="../index.html" class="logo decstor">
+            <span class="logo-mini"><img src="../img/logo%201.png" alt="logo"></span>
+            <span class="logo-lg"><img src="../img/logo%201.png" alt="logo"><span>BilliardCRM</span></span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" id="SidebarToggle" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    
+
+                    <messages-header></messages-header>
+
+                    <li class="calendar-menu  d-none d-md-block ">
+                        <clock-header></clock-header>
+                    </li>
+                    <li class="time-menu  d-none d-md-block "></li>
+                    <li class="locale">
+                        <a class="" href="../customers.html?lng=ua">
+                            <span class="time">UA</span>
+                        </a>
+                    </li>
+                    <li class="locale">
+                        <a class=" active " href="../categories.html?lng=ru">
+                            <span class="time">RU</span>
+                        </a>
+                    </li>
+                                            <li class="user user-menu">
+                            <a href="#">
+                                <span>Aleks Majlo</span>
+                            </a>
+                        </li>
+                                        <li>
+                        <a href="../logout.html"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                           data-toggle="control-sidebar">Выход</a>
+                    </li>
+                    <form id="logout-form" action="http://tt.bb-crm.com/logout" method="POST" style="display: none;">
+                        <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar__main">
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+                <li class="notChild">
+                    <a href="../index.html">
+                        <img src="../img/logo%201.png" alt="logo">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../customers.html">
+                        <img src="../img/menu2.png" alt="База клиентов">
+                        <span>База клиентов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../booking.html">
+                        <img src="../img/menu3.png" alt="Бронирования">
+                        <span> Бронирования</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../table_open.html">
+                        <img src="../img/menu4.png" alt="Открытые столы">
+                        <span>Открытые столы</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="../bars.html">
+                        <img src="../img/menu5.png" alt="Открытые заказы">
+                        <span>Открытые заказы</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu6.png" alt="Конфигурация">
+                        <span>Конфигурация</span>
+                        <span class="pull-right-container">
+							    <i class="fa fa-angle-left pull-right"></i>
+						</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../tables.html">Бильярдные столы</a></li>
+                        <li><a href="../users.html"> Пользователи бэк-офиса</a></li>
+                        <li><a href="../sockets.html">Оборудование</a></li>
+                        
+                        <li><a href="../coupons.html">Купоны</a></li>
+                        <li><a href="../keys.html">Апи ключи</a></li>
+                        <li><a target="__blank" href="../logs.html">Log</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu7.png" alt="Склад">
+                        <span>Cклад</span>
+                        <span class="pull-right-container">
+                                                <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../ingredients.html"> <span>Инградиенты</span></a></li>
+                        <li><a href="../products.html"> <span>Товары</span></a></li>
+                        <li><a href="../categories.html"> <span>Категории</span></a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu8.png" alt="Документы">
+                        <span>Документы</span>
+                        <span class="pull-right-container">
+                                                                   <i class="fa fa-angle-left pull-right"></i>
+                                                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="../doc/acts.html">
+                                <span>Акты</span></a>
+                        </li>
+                        <li>
+                            <a href="../doc/consignments.html">
+                                <span>Расходные накладные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../doc/purchaseinvoices.html">
+                                <span>Приходная накладная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../doc/writeofs.html">
+                                <span>Списание продуктов</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="notChild">
+                    <a href="../orders.html">
+                        <img src="../img/menu9.png" alt="История заказов">
+                        <span>История заказов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../changes.html">
+                        <img src="../img/menu10.png" alt="Смена">
+                        <span>Смены</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu11.png" alt="Аналитика">
+                        <span>Аналитика</span>
+                        <span class="pull-right-container">
+                                               <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="../analytics/attendance.html">
+                                <span>Посещаемость заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../analytics/popularity-tables.html">
+                                <span>Популярность столов</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../analytics/incomes.html">
+                                <span>Доход заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../analytics/employees.html">
+                                <span>Доход бильярдной по сотрудникам</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class=" wrapper__main">
+        <section class="content__main">
+                <div class="user">
+        <div class="user__title">
+            <h2>Смена #4244</h2>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-7">
+                <div class="filter-block filter-order">
+                    <form class="filter-form">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Пользователь</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>Оля Собчук</p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Старт смены</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>2021-09-27 11:18:22</p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Окончание изменения</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                     2021-09-28 02:46:27
+                                </p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Клиентов</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    55
+                                </p>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Наличными</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    6614 ₴
+                                </p>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Картой</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    0 ₴
+                                </p>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Заработанно</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    6614 ₴
+                                </p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Сума на начало</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    0 ₴
+                                </p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Сума на закрытие</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    6614 ₴
+                                </p>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="table_user table-responsive">
+            <table>
+                <thead>
+                <tr class="td-one">
+                    <td>#</td>
+                    <td>Тип</td>
+                    <td>Комментарий</td>
+                    <td>Столы</td>
+                    <td>Дата начала</td>
+                    <td>Дата закрытия</td>
+                    <td>Сумма</td>
+                    <td></td>
+                </tr>
+                </thead>
+
+                <tbody>
+                                    <tr>
+                        <td>175462 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>3</td>
+                        <td> -</td>
+                        <td>2021-09-27 19:10:52</td>
+                        <td>
+                                                            2021-09-27 20:16:29
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175462.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175464 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>Цепура</td>
+                        <td> -</td>
+                        <td>2021-09-27 19:21:17</td>
+                        <td>
+                                                            2021-09-27 21:57:06
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175464.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175466 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td></td>
+                        <td> -</td>
+                        <td>2021-09-27 19:25:04</td>
+                        <td>
+                                                            2021-09-27 19:25:12
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175466.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175469 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td></td>
+                        <td> -</td>
+                        <td>2021-09-27 19:51:30</td>
+                        <td>
+                                                            2021-09-27 19:52:24
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175469.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175471 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td></td>
+                        <td> -</td>
+                        <td>2021-09-27 19:53:29</td>
+                        <td>
+                                                            2021-09-27 19:53:49
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175471.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175472 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>10</td>
+                        <td> -</td>
+                        <td>2021-09-27 19:53:50</td>
+                        <td>
+                                                            2021-09-27 21:06:34
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175472.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175474 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td></td>
+                        <td> -</td>
+                        <td>2021-09-27 19:58:37</td>
+                        <td>
+                                                            2021-09-27 19:59:18
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175474.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175475 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td></td>
+                        <td> -</td>
+                        <td>2021-09-27 20:01:14</td>
+                        <td>
+                                                            2021-09-27 20:05:04
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175475.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175478 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td></td>
+                        <td> -</td>
+                        <td>2021-09-27 20:15:13</td>
+                        <td>
+                                                            2021-09-27 20:15:25
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175478.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175479 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>13</td>
+                        <td> -</td>
+                        <td>2021-09-27 20:15:33</td>
+                        <td>
+                                                            2021-09-27 22:17:18
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175479.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175480 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td></td>
+                        <td> -</td>
+                        <td>2021-09-27 20:18:03</td>
+                        <td>
+                                                            2021-09-27 20:18:26
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175480.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175481 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>8</td>
+                        <td> -</td>
+                        <td>2021-09-27 20:21:41</td>
+                        <td>
+                                                            2021-09-28 02:42:00
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175481.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175482 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td></td>
+                        <td> -</td>
+                        <td>2021-09-27 20:22:12</td>
+                        <td>
+                                                            2021-09-27 20:22:41
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175482.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175484 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>9</td>
+                        <td> -</td>
+                        <td>2021-09-27 20:29:32</td>
+                        <td>
+                                                            2021-09-27 22:57:08
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175484.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175485 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>9</td>
+                        <td> -</td>
+                        <td>2021-09-27 20:32:05</td>
+                        <td>
+                                                            2021-09-27 22:57:19
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175485.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175486 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td></td>
+                        <td> -</td>
+                        <td>2021-09-27 20:32:31</td>
+                        <td>
+                                                            2021-09-27 20:33:38
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175486.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175491 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>5</td>
+                        <td> -</td>
+                        <td>2021-09-27 20:54:03</td>
+                        <td>
+                                                            2021-09-27 23:21:29
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175491.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175493 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>За стінкою</td>
+                        <td> -</td>
+                        <td>2021-09-27 20:57:12</td>
+                        <td>
+                                                            2021-09-27 21:45:58
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175493.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175494 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td></td>
+                        <td> -</td>
+                        <td>2021-09-27 21:05:07</td>
+                        <td>
+                                                            2021-09-27 21:05:14
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175494.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>175495 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>10</td>
+                        <td> -</td>
+                        <td>2021-09-27 21:06:40</td>
+                        <td>
+                                                            2021-09-27 23:45:56
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/175495.html">>>></a>
+                        </td>
+                    </tr>
+                                </tbody>
+
+            </table>
+        </div>
+        <div style="overflow: hidden;">
+        <nav>
+            <ul class="pagination">
+
+                                    <li class="page-item">
+                        <a class="page-link" href="42442679.html?page=1" rel="prev" aria-label="pagination.previous">&lsaquo;</a>
+                    </li>
+                
+                
+                                    
+                    
+                    
+                                                                                                        <li class="page-item"><a class="page-link" href="42442679.html?page=1">1</a></li>
+                                                                                                                <li class="page-item active" aria-current="page"><span class="page-link">2</span></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="42449ba9.html?page=3">3</a></li>
+                                                                                        
+                
+                                    <li class="page-item">
+                        <a class="page-link" href="42449ba9.html?page=3" rel="next" aria-label="pagination.next">&rsaquo;</a>
+                    </li>
+                
+            </ul>
+        </nav>
+    </div>
+
+
+    </div>
+        </section>
+    </div>
+</div>
+</body>
+
+<!-- Mirrored from tt.bb-crm.com/changes/4244?page=2 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 12:26:55 GMT -->
+</html>

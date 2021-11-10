@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="ru">
+
+<!-- Mirrored from tt.bb-crm.com/changes/4303 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 10:03:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1 , user-scalable=0, shrink-to-fit=no">
+    <meta name="csrf-token" content="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+    <title>BilliardCRM</title>
+
+    
+
+
+    <link rel="stylesheet" href="../old/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../old/bower_components/Ionicons/css/ionicons.min.css">
+
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="../../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="../../cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" media="screen" type="text/css" href="../old/css/demo.css"/>
+    
+
+    <link rel="stylesheet" href="../../cdn.jsdelivr.net/gh/fancyapps/fancybox%403.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="../css/app.css" rel="stylesheet">
+    <link href="../old/css/main.css" rel="stylesheet">
+    <link href="../css/my.css" rel="stylesheet">
+    <script>
+        var LanguneThisJs = 'ru';
+    </script>
+    
+    <script src="../libs/jquery.min.js"></script>
+    <script src="../libs/jquery.fancybox.min.js"></script>
+    <script src="../js/app.js" defer></script>
+
+</head>
+<body class="sidebar-mini">
+<div class="wrapper" id="app">
+    <header class="header__main">
+        <a href="../index.html" class="logo decstor">
+            <span class="logo-mini"><img src="../img/logo%201.png" alt="logo"></span>
+            <span class="logo-lg"><img src="../img/logo%201.png" alt="logo"><span>BilliardCRM</span></span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" id="SidebarToggle" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    
+
+                    <messages-header></messages-header>
+
+                    <li class="calendar-menu  d-none d-md-block ">
+                        <clock-header></clock-header>
+                    </li>
+                    <li class="time-menu  d-none d-md-block "></li>
+                    <li class="locale">
+                        <a class="" href="../customers.html?lng=ua">
+                            <span class="time">UA</span>
+                        </a>
+                    </li>
+                    <li class="locale">
+                        <a class=" active " href="../categories.html?lng=ru">
+                            <span class="time">RU</span>
+                        </a>
+                    </li>
+                                            <li class="user user-menu">
+                            <a href="#">
+                                <span>Aleks Majlo</span>
+                            </a>
+                        </li>
+                                        <li>
+                        <a href="../logout.html"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                           data-toggle="control-sidebar">Выход</a>
+                    </li>
+                    <form id="logout-form" action="http://tt.bb-crm.com/logout" method="POST" style="display: none;">
+                        <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar__main">
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+                <li class="notChild">
+                    <a href="../index.html">
+                        <img src="../img/logo%201.png" alt="logo">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../customers.html">
+                        <img src="../img/menu2.png" alt="База клиентов">
+                        <span>База клиентов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../booking.html">
+                        <img src="../img/menu3.png" alt="Бронирования">
+                        <span> Бронирования</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../table_open.html">
+                        <img src="../img/menu4.png" alt="Открытые столы">
+                        <span>Открытые столы</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="../bars.html">
+                        <img src="../img/menu5.png" alt="Открытые заказы">
+                        <span>Открытые заказы</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu6.png" alt="Конфигурация">
+                        <span>Конфигурация</span>
+                        <span class="pull-right-container">
+							    <i class="fa fa-angle-left pull-right"></i>
+						</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../tables.html">Бильярдные столы</a></li>
+                        <li><a href="../users.html"> Пользователи бэк-офиса</a></li>
+                        <li><a href="../sockets.html">Оборудование</a></li>
+                        
+                        <li><a href="../coupons.html">Купоны</a></li>
+                        <li><a href="../keys.html">Апи ключи</a></li>
+                        <li><a target="__blank" href="../logs.html">Log</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu7.png" alt="Склад">
+                        <span>Cклад</span>
+                        <span class="pull-right-container">
+                                                <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../ingredients.html"> <span>Инградиенты</span></a></li>
+                        <li><a href="../products.html"> <span>Товары</span></a></li>
+                        <li><a href="../categories.html"> <span>Категории</span></a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu8.png" alt="Документы">
+                        <span>Документы</span>
+                        <span class="pull-right-container">
+                                                                   <i class="fa fa-angle-left pull-right"></i>
+                                                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="../doc/acts.html">
+                                <span>Акты</span></a>
+                        </li>
+                        <li>
+                            <a href="../doc/consignments.html">
+                                <span>Расходные накладные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../doc/purchaseinvoices.html">
+                                <span>Приходная накладная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../doc/writeofs.html">
+                                <span>Списание продуктов</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="notChild">
+                    <a href="../orders.html">
+                        <img src="../img/menu9.png" alt="История заказов">
+                        <span>История заказов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../changes.html">
+                        <img src="../img/menu10.png" alt="Смена">
+                        <span>Смены</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu11.png" alt="Аналитика">
+                        <span>Аналитика</span>
+                        <span class="pull-right-container">
+                                               <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="../analytics/attendance.html">
+                                <span>Посещаемость заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../analytics/popularity-tables.html">
+                                <span>Популярность столов</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../analytics/incomes.html">
+                                <span>Доход заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../analytics/employees.html">
+                                <span>Доход бильярдной по сотрудникам</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class=" wrapper__main">
+        <section class="content__main">
+                <div class="user">
+        <div class="user__title">
+            <h2>Смена #4303</h2>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-7">
+                <div class="filter-block filter-order">
+                    <form class="filter-form">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Пользователь</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>Сулім Роман</p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Старт смены</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>2021-10-30 10:16:04</p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Окончание изменения</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                     2021-10-31 03:23:56
+                                </p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Клиентов</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    41
+                                </p>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Наличными</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    7956.43 ₴
+                                </p>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Картой</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    0 ₴
+                                </p>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Заработанно</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    7956.43 ₴
+                                </p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Сума на начало</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    0 ₴
+                                </p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Сума на закрытие</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    7956 ₴
+                                </p>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="table_user table-responsive">
+            <table>
+                <thead>
+                <tr class="td-one">
+                    <td>#</td>
+                    <td>Тип</td>
+                    <td>Комментарий</td>
+                    <td>Столы</td>
+                    <td>Дата начала</td>
+                    <td>Дата закрытия</td>
+                    <td>Сумма</td>
+                    <td></td>
+                </tr>
+                </thead>
+
+                <tbody>
+                                    <tr>
+                        <td>178237 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №4 снукер</td>
+                        <td>2021-10-30 10:16:11</td>
+                        <td>
+                                                            2021-10-30 13:25:36
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178237.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178238 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №10 російський більярд</td>
+                        <td>2021-10-30 11:24:23</td>
+                        <td>
+                                                            2021-10-30 17:34:57
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178238.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178243 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №12 російський більярд</td>
+                        <td>2021-10-30 13:44:00</td>
+                        <td>
+                                                            2021-10-30 14:46:39
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178243.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178244 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №7 російський більярд</td>
+                        <td>2021-10-30 13:53:23</td>
+                        <td>
+                                                            2021-10-30 18:07:11
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178244.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178247 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №6 російський більярд</td>
+                        <td>2021-10-30 14:01:27</td>
+                        <td>
+                                                            2021-10-30 14:55:58
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178247.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178248 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №3 пул</td>
+                        <td>2021-10-30 14:01:35</td>
+                        <td>
+                                                            2021-10-30 14:56:12
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178248.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178251 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №11 російський більярд</td>
+                        <td>2021-10-30 14:45:04</td>
+                        <td>
+                                                            2021-10-30 16:01:23
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178251.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178252 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №9 російський більярд</td>
+                        <td>2021-10-30 14:56:06</td>
+                        <td>
+                                                            2021-10-30 16:07:33
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178252.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178253 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №4 снукер</td>
+                        <td>2021-10-30 14:57:09</td>
+                        <td>
+                                                            2021-10-30 15:55:03
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178253.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178254 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №6 російський більярд</td>
+                        <td>2021-10-30 15:20:23</td>
+                        <td>
+                                                            2021-10-30 15:20:31
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178254.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178255 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №8 російський більярд</td>
+                        <td>2021-10-30 15:20:35</td>
+                        <td>
+                                                            2021-10-30 17:42:31
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178255.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178257 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №11 російський більярд</td>
+                        <td>2021-10-30 16:45:38</td>
+                        <td>
+                                                            2021-10-30 17:59:29
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178257.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178259 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №6 російський більярд</td>
+                        <td>2021-10-30 17:25:39</td>
+                        <td>
+                                                            2021-10-30 18:19:05
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178259.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178260 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №2 пул</td>
+                        <td>2021-10-30 17:25:53</td>
+                        <td>
+                                                            2021-10-30 18:37:47
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178260.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178262 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №1 пул</td>
+                        <td>2021-10-30 17:47:56</td>
+                        <td>
+                                                            2021-10-30 18:51:52
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178262.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178263 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №4 снукер</td>
+                        <td>2021-10-30 18:00:40</td>
+                        <td>
+                                                            2021-10-30 21:02:49
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178263.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178265 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №7 російський більярд</td>
+                        <td>2021-10-30 18:09:35</td>
+                        <td>
+                                                            2021-10-30 19:16:44
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178265.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178266 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №9 російський більярд</td>
+                        <td>2021-10-30 18:10:25</td>
+                        <td>
+                                                            2021-10-30 21:12:51
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178266.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178267 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №3 пул</td>
+                        <td>2021-10-30 18:34:26</td>
+                        <td>
+                                                            2021-10-30 19:59:33
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178267.html">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>178268 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №2 пул</td>
+                        <td>2021-10-30 18:40:32</td>
+                        <td>
+                                                            2021-10-30 21:12:13
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="../orders/178268.html">>>></a>
+                        </td>
+                    </tr>
+                                </tbody>
+
+            </table>
+        </div>
+        <div style="overflow: hidden;">
+        <nav>
+            <ul class="pagination">
+
+                                    <li class="page-item disabled" aria-disabled="true" aria-label="pagination.previous">
+                        <span class="page-link" aria-hidden="true">&lsaquo;</span>
+                    </li>
+                
+                
+                                    
+                    
+                    
+                                                                                                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="43034658.html?page=2">2</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="43039ba9.html?page=3">3</a></li>
+                                                                                        
+                
+                                    <li class="page-item">
+                        <a class="page-link" href="43034658.html?page=2" rel="next" aria-label="pagination.next">&rsaquo;</a>
+                    </li>
+                
+            </ul>
+        </nav>
+    </div>
+
+
+    </div>
+        </section>
+    </div>
+</div>
+</body>
+
+<!-- Mirrored from tt.bb-crm.com/changes/4303 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 10:03:30 GMT -->
+</html>

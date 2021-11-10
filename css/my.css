@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+    .ConteerRowTable .widthFull, .ConteerRowTable .widthFullFree {
+        display: block !important;
+        width: 100%;
+    }
+}

@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="ru">
+
+<!-- Mirrored from tt.bb-crm.com/doc/consignments?page=12 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 10:30:31 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1 , user-scalable=0, shrink-to-fit=no">
+    <meta name="csrf-token" content="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+    <title>BilliardCRM</title>
+
+    
+
+
+    <link rel="stylesheet" href="../old/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../old/bower_components/Ionicons/css/ionicons.min.css">
+
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="../../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="../../cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" media="screen" type="text/css" href="../old/css/demo.css"/>
+    
+
+    <link rel="stylesheet" href="../../cdn.jsdelivr.net/gh/fancyapps/fancybox%403.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="../css/app.css" rel="stylesheet">
+    <link href="../old/css/main.css" rel="stylesheet">
+    <link href="../css/my.css" rel="stylesheet">
+    <script>
+        var LanguneThisJs = 'ru';
+    </script>
+    
+    <script src="../libs/jquery.min.js"></script>
+    <script src="../libs/jquery.fancybox.min.js"></script>
+    <script src="../js/app.js" defer></script>
+
+</head>
+<body class="sidebar-mini">
+<div class="wrapper" id="app">
+    <header class="header__main">
+        <a href="../index.html" class="logo decstor">
+            <span class="logo-mini"><img src="../img/logo%201.png" alt="logo"></span>
+            <span class="logo-lg"><img src="../img/logo%201.png" alt="logo"><span>BilliardCRM</span></span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" id="SidebarToggle" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    
+
+                    <messages-header></messages-header>
+
+                    <li class="calendar-menu  d-none d-md-block ">
+                        <clock-header></clock-header>
+                    </li>
+                    <li class="time-menu  d-none d-md-block "></li>
+                    <li class="locale">
+                        <a class="" href="../customers.html?lng=ua">
+                            <span class="time">UA</span>
+                        </a>
+                    </li>
+                    <li class="locale">
+                        <a class=" active " href="../categories.html?lng=ru">
+                            <span class="time">RU</span>
+                        </a>
+                    </li>
+                                            <li class="user user-menu">
+                            <a href="#">
+                                <span>Aleks Majlo</span>
+                            </a>
+                        </li>
+                                        <li>
+                        <a href="../logout.html"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                           data-toggle="control-sidebar">Выход</a>
+                    </li>
+                    <form id="logout-form" action="http://tt.bb-crm.com/logout" method="POST" style="display: none;">
+                        <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar__main">
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+                <li class="notChild">
+                    <a href="../index.html">
+                        <img src="../img/logo%201.png" alt="logo">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../customers.html">
+                        <img src="../img/menu2.png" alt="База клиентов">
+                        <span>База клиентов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../booking.html">
+                        <img src="../img/menu3.png" alt="Бронирования">
+                        <span> Бронирования</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../table_open.html">
+                        <img src="../img/menu4.png" alt="Открытые столы">
+                        <span>Открытые столы</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="../bars.html">
+                        <img src="../img/menu5.png" alt="Открытые заказы">
+                        <span>Открытые заказы</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu6.png" alt="Конфигурация">
+                        <span>Конфигурация</span>
+                        <span class="pull-right-container">
+							    <i class="fa fa-angle-left pull-right"></i>
+						</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../tables.html">Бильярдные столы</a></li>
+                        <li><a href="../users.html"> Пользователи бэк-офиса</a></li>
+                        <li><a href="../sockets.html">Оборудование</a></li>
+                        
+                        <li><a href="../coupons.html">Купоны</a></li>
+                        <li><a href="../keys.html">Апи ключи</a></li>
+                        <li><a target="__blank" href="../logs.html">Log</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu7.png" alt="Склад">
+                        <span>Cклад</span>
+                        <span class="pull-right-container">
+                                                <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../ingredients.html"> <span>Инградиенты</span></a></li>
+                        <li><a href="../products.html"> <span>Товары</span></a></li>
+                        <li><a href="../categories.html"> <span>Категории</span></a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu8.png" alt="Документы">
+                        <span>Документы</span>
+                        <span class="pull-right-container">
+                                                                   <i class="fa fa-angle-left pull-right"></i>
+                                                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="acts.html">
+                                <span>Акты</span></a>
+                        </li>
+                        <li>
+                            <a href="consignments.html">
+                                <span>Расходные накладные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="purchaseinvoices.html">
+                                <span>Приходная накладная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="writeofs.html">
+                                <span>Списание продуктов</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="notChild">
+                    <a href="../orders.html">
+                        <img src="../img/menu9.png" alt="История заказов">
+                        <span>История заказов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../changes.html">
+                        <img src="../img/menu10.png" alt="Смена">
+                        <span>Смены</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu11.png" alt="Аналитика">
+                        <span>Аналитика</span>
+                        <span class="pull-right-container">
+                                               <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="../analytics/attendance.html">
+                                <span>Посещаемость заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../analytics/popularity-tables.html">
+                                <span>Популярность столов</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../analytics/incomes.html">
+                                <span>Доход заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../analytics/employees.html">
+                                <span>Доход бильярдной по сотрудникам</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class=" wrapper__main">
+        <section class="content__main">
+                <div class="user">
+        <div class="row">
+            <div class="col-xs-6 col-xs-xs-12">
+                <div class="user__title">
+                    <h2>Расходные накладные</h2>
+                    <div class="filter-block">
+    <h4>Фильтр</h4>
+    <form class="filter-form" method="get">
+        <div class="row">
+            <div class="col-sm-4 col-xs-xs-xs-12"><label>Начало</label></div>
+            <div class="col-lg-8 col-xs-xs-xs-12">
+                <input type="date"
+                                              name="start"
+                       placeholder="ДД.ММ.ГГГГ">
+            </div>
+
+            <div class="col-sm-4 col-xs-xs-xs-12"><label>Конец</label></div>
+            <div class="col-lg-8 col-xs-xs-xs-12">
+                <input type="date"
+                       placeholder="ДД.ММ.ГГГГ"
+                                              name="end">
+            </div>
+
+            <div class="col-sm-4 col-xs-xs-xs-12"><label>Сотрудник</label></div>
+            <div class="col-lg-8 col-xs-xs-xs-12">
+                <select name="user_id">
+                    <option></option>
+                                            <option                                 value="1">Aleks Majlo</option>
+                                            <option                                 value="2">Александр Степанов</option>
+                                            <option                                 value="38">Юлія Костів</option>
+                                            <option                                 value="39">Сулім Роман</option>
+                                            <option                                 value="40">Марія Сиса (бар)</option>
+                                            <option                                 value="45">Влад Жовнір</option>
+                                            <option                                 value="46">Дарина Цегельник (бар)</option>
+                                            <option                                 value="47">Анастасія Винничук (бар)</option>
+                                            <option                                 value="48">Назар Капустинський маркер</option>
+                                            <option                                 value="50">Оля Собчук</option>
+                                            <option                                 value="51">Альбина Кандабаева</option>
+                                            <option                                 value="52">Катя (бар)</option>
+                                            <option                                 value="53">Вікторія</option>
+                                    </select>
+            </div>
+
+        </div>
+        <div class="buttons">
+            <a class="ResetLink" href="%d1%81onsignments.html"
+               class="">Очистить            </a>
+            <button>Фильтровать</button>
+        </div>
+    </form>
+</div>
+
+                </div>
+            </div>
+        </div>
+        <div class="user_table table-responsive">
+            <table>
+                <thead>
+                    <tr >
+                    <td>
+                    </td>
+                    <td>
+                        Дата и время                    </td>
+                    <td>
+                        Сотрудник                    </td>
+                    <td>
+                        Сумма                    </td>
+                    <td>
+                        Количество                    </td>
+                </tr>
+                </thead>
+                   <tbody>
+                                          <tr>
+                           <td>
+                               <a href="consignments/231.html">231</a>
+                           </td>
+                           <td>2021-01-03 11:01:58</td>
+                           <td>
+                                                                  Оля Собчук
+                                                          </td>
+                           <td>
+                               6274
+                           </td>
+                           <td> 59</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/230.html">230</a>
+                           </td>
+                           <td>2021-01-02 10:34:36</td>
+                           <td>
+                                                                  Оля Собчук
+                                                          </td>
+                           <td>
+                               4384
+                           </td>
+                           <td> 44</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/229.html">229</a>
+                           </td>
+                           <td>2021-01-01 14:27:49</td>
+                           <td>
+                                                                  Оля Собчук
+                                                          </td>
+                           <td>
+                               2576
+                           </td>
+                           <td> 26</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/228.html">228</a>
+                           </td>
+                           <td>2020-12-30 11:30:06</td>
+                           <td>
+                                                                  Оля Собчук
+                                                          </td>
+                           <td>
+                               3305
+                           </td>
+                           <td> 36</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/227.html">227</a>
+                           </td>
+                           <td>2020-12-29 11:41:13</td>
+                           <td>
+                                                                  Марія Сиса (бар)
+                                                          </td>
+                           <td>
+                               3192.5
+                           </td>
+                           <td> 29</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/226.html">226</a>
+                           </td>
+                           <td>2020-12-28 11:47:33</td>
+                           <td>
+                                                                  Оля Собчук
+                                                          </td>
+                           <td>
+                               4743
+                           </td>
+                           <td> 38</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/225.html">225</a>
+                           </td>
+                           <td>2020-12-27 13:38:44</td>
+                           <td>
+                                                                  Марія Сиса (бар)
+                                                          </td>
+                           <td>
+                               4832
+                           </td>
+                           <td> 26</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/224.html">224</a>
+                           </td>
+                           <td>2020-12-26 11:30:18</td>
+                           <td>
+                                                                  Сулім Роман
+                                                          </td>
+                           <td>
+                               7661
+                           </td>
+                           <td> 50</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/223.html">223</a>
+                           </td>
+                           <td>2020-12-25 15:37:50</td>
+                           <td>
+                                                                  Марія Сиса (бар)
+                                                          </td>
+                           <td>
+                               4983.5
+                           </td>
+                           <td> 38</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/222.html">222</a>
+                           </td>
+                           <td>2020-12-24 10:00:00</td>
+                           <td>
+                                                                  Оля Собчук
+                                                          </td>
+                           <td>
+                               6716
+                           </td>
+                           <td> 50</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/221.html">221</a>
+                           </td>
+                           <td>2020-12-23 16:29:47</td>
+                           <td>
+                                                                  Марія Сиса (бар)
+                                                          </td>
+                           <td>
+                               2745
+                           </td>
+                           <td> 29</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/220.html">220</a>
+                           </td>
+                           <td>2020-12-21 11:43:36</td>
+                           <td>
+                                                                  Дарина Цегельник (бар)
+                                                          </td>
+                           <td>
+                               7492.5
+                           </td>
+                           <td> 75</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/219.html">219</a>
+                           </td>
+                           <td>2020-12-19 15:39:30</td>
+                           <td>
+                                                                  Дарина Цегельник (бар)
+                                                          </td>
+                           <td>
+                               9170
+                           </td>
+                           <td> 59</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/218.html">218</a>
+                           </td>
+                           <td>2020-12-18 11:11:59</td>
+                           <td>
+                                                                  Дарина Цегельник (бар)
+                                                          </td>
+                           <td>
+                               4176
+                           </td>
+                           <td> 45</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/217.html">217</a>
+                           </td>
+                           <td>2020-12-15 13:54:19</td>
+                           <td>
+                                                                  Марія Сиса (бар)
+                                                          </td>
+                           <td>
+                               14299
+                           </td>
+                           <td> 82</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/216.html">216</a>
+                           </td>
+                           <td>2020-12-14 12:07:17</td>
+                           <td>
+                                                                  Дарина Цегельник (бар)
+                                                          </td>
+                           <td>
+                               2634
+                           </td>
+                           <td> 27</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/215.html">215</a>
+                           </td>
+                           <td>2020-12-13 11:08:22</td>
+                           <td>
+                                                                  Оля Собчук
+                                                          </td>
+                           <td>
+                               5037
+                           </td>
+                           <td> 35</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/214.html">214</a>
+                           </td>
+                           <td>2020-12-12 11:03:50</td>
+                           <td>
+                                                                  Дарина Цегельник (бар)
+                                                          </td>
+                           <td>
+                               6444
+                           </td>
+                           <td> 66</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/213.html">213</a>
+                           </td>
+                           <td>2020-12-10 14:24:51</td>
+                           <td>
+                                                                  Марія Сиса (бар)
+                                                          </td>
+                           <td>
+                               12460
+                           </td>
+                           <td> 86</td>
+                       </tr>
+                                          <tr>
+                           <td>
+                               <a href="consignments/212.html">212</a>
+                           </td>
+                           <td>2020-12-08 12:00:12</td>
+                           <td>
+                                                                  Дарина Цегельник (бар)
+                                                          </td>
+                           <td>
+                               6530.5
+                           </td>
+                           <td> 82</td>
+                       </tr>
+                   
+                   </tbody>
+
+            </table>
+        </div>
+
+        <div style="overflow: hidden;">
+        <nav>
+            <ul class="pagination">
+
+                                    <li class="page-item">
+                        <a class="page-link" href="consignments1c8b.html?page=11" rel="prev" aria-label="pagination.previous">&lsaquo;</a>
+                    </li>
+                
+                
+                                    
+                    
+                    
+                                                                                                        <li class="page-item"><a class="page-link" href="consignments2679.html?page=1">1</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="consignments4658.html?page=2">2</a></li>
+                                                                                                            
+                                            <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+                    
+                    
+                                                        
+                    
+                    
+                                                                                                        <li class="page-item"><a class="page-link" href="consignments0b08.html?page=9">9</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="consignments1448.html?page=10">10</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="consignments1c8b.html?page=11">11</a></li>
+                                                                                                                <li class="page-item active" aria-current="page"><span class="page-link">12</span></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="consignments8c93.html?page=13">13</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="consignmentsa7f1.html?page=14">14</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="consignments5760.html?page=15">15</a></li>
+                                                                                                            
+                                            <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+                    
+                    
+                                                        
+                    
+                    
+                                                                                                        <li class="page-item"><a class="page-link" href="consignments3c09.html?page=22">22</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="consignments89ae.html?page=23">23</a></li>
+                                                                                        
+                
+                                    <li class="page-item">
+                        <a class="page-link" href="consignments8c93.html?page=13" rel="next" aria-label="pagination.next">&rsaquo;</a>
+                    </li>
+                
+            </ul>
+        </nav>
+    </div>
+
+
+    </div>
+        </section>
+    </div>
+</div>
+</body>
+
+<!-- Mirrored from tt.bb-crm.com/doc/consignments?page=12 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 10:30:54 GMT -->
+</html>

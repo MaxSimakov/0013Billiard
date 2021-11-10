@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ru">
+
+<!-- Mirrored from tt.bb-crm.com/orders/123021 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 12:39:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1 , user-scalable=0, shrink-to-fit=no">
+    <meta name="csrf-token" content="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+    <title>BilliardCRM</title>
+
+    
+
+
+    <link rel="stylesheet" href="http://tt.bb-crm.com/old/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://tt.bb-crm.com/old/bower_components/Ionicons/css/ionicons.min.css">
+
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" media="screen" type="text/css" href="http://tt.bb-crm.com/old//css/demo.css"/>
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="http://tt.bb-crm.com/css/app.css" rel="stylesheet">
+    <link href="http://tt.bb-crm.com/old/css/main.css" rel="stylesheet">
+    <link href="http://tt.bb-crm.com/css/my.css" rel="stylesheet">
+    <script>
+        var LanguneThisJs = 'ru';
+    </script>
+    
+    <script src="http://tt.bb-crm.com/libs/jquery.min.js"></script>
+    <script src="http://tt.bb-crm.com/libs/jquery.fancybox.min.js"></script>
+    <script src="http://tt.bb-crm.com/js/app.js" defer></script>
+
+</head>
+<body class="sidebar-mini">
+<div class="wrapper" id="app">
+    <header class="header__main">
+        <a href="http://tt.bb-crm.com/" class="logo decstor">
+            <span class="logo-mini"><img src="http://tt.bb-crm.com/img/logo 1.png" alt="logo"></span>
+            <span class="logo-lg"><img src="http://tt.bb-crm.com/img/logo 1.png" alt="logo"><span>BilliardCRM</span></span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" id="SidebarToggle" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    
+
+                    <messages-header></messages-header>
+
+                    <li class="calendar-menu  d-none d-md-block ">
+                        <clock-header></clock-header>
+                    </li>
+                    <li class="time-menu  d-none d-md-block "></li>
+                    <li class="locale">
+                        <a class="" href="http://tt.bb-crm.com/sessionLng?lng=ua">
+                            <span class="time">UA</span>
+                        </a>
+                    </li>
+                    <li class="locale">
+                        <a class=" active " href="http://tt.bb-crm.com/sessionLng?lng=ru">
+                            <span class="time">RU</span>
+                        </a>
+                    </li>
+                                            <li class="user user-menu">
+                            <a href="#">
+                                <span>Aleks Majlo</span>
+                            </a>
+                        </li>
+                                        <li>
+                        <a href="http://tt.bb-crm.com/logout"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                           data-toggle="control-sidebar">Выход</a>
+                    </li>
+                    <form id="logout-form" action="http://tt.bb-crm.com/logout" method="POST" style="display: none;">
+                        <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar__main">
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/">
+                        <img src="http://tt.bb-crm.com/img/logo 1.png" alt="logo">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/customers">
+                        <img src="http://tt.bb-crm.com/img/menu2.png" alt="База клиентов">
+                        <span>База клиентов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/booking">
+                        <img src="http://tt.bb-crm.com/img/menu3.png" alt="Бронирования">
+                        <span> Бронирования</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/table_open">
+                        <img src="http://tt.bb-crm.com/img/menu4.png" alt="Открытые столы">
+                        <span>Открытые столы</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="http://tt.bb-crm.com/bars">
+                        <img src="http://tt.bb-crm.com/img/menu5.png" alt="Открытые заказы">
+                        <span>Открытые заказы</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="http://tt.bb-crm.com/img/menu6.png" alt="Конфигурация">
+                        <span>Конфигурация</span>
+                        <span class="pull-right-container">
+							    <i class="fa fa-angle-left pull-right"></i>
+						</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="http://tt.bb-crm.com/tables">Бильярдные столы</a></li>
+                        <li><a href="http://tt.bb-crm.com/users"> Пользователи бэк-офиса</a></li>
+                        <li><a href="http://tt.bb-crm.com/sockets">Оборудование</a></li>
+                        
+                        <li><a href="http://tt.bb-crm.com/coupons">Купоны</a></li>
+                        <li><a href="http://tt.bb-crm.com/keys">Апи ключи</a></li>
+                        <li><a target="__blank" href="http://tt.bb-crm.com/logs">Log</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="http://tt.bb-crm.com/img/menu7.png" alt="Склад">
+                        <span>Cклад</span>
+                        <span class="pull-right-container">
+                                                <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="http://tt.bb-crm.com/ingredients"> <span>Инградиенты</span></a></li>
+                        <li><a href="http://tt.bb-crm.com/products"> <span>Товары</span></a></li>
+                        <li><a href="http://tt.bb-crm.com/categories"> <span>Категории</span></a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="http://tt.bb-crm.com/img/menu8.png" alt="Документы">
+                        <span>Документы</span>
+                        <span class="pull-right-container">
+                                                                   <i class="fa fa-angle-left pull-right"></i>
+                                                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="http://tt.bb-crm.com/doc/acts">
+                                <span>Акты</span></a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/doc/consignments">
+                                <span>Расходные накладные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/doc/purchaseinvoices">
+                                <span>Приходная накладная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/doc/writeofs">
+                                <span>Списание продуктов</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/orders">
+                        <img src="http://tt.bb-crm.com/img/menu9.png" alt="История заказов">
+                        <span>История заказов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/changes">
+                        <img src="http://tt.bb-crm.com/img/menu10.png" alt="Смена">
+                        <span>Смены</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="http://tt.bb-crm.com/img/menu11.png" alt="Аналитика">
+                        <span>Аналитика</span>
+                        <span class="pull-right-container">
+                                               <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="http://tt.bb-crm.com/analytics/attendance">
+                                <span>Посещаемость заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/analytics/popularity-tables">
+                                <span>Популярность столов</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/analytics/incomes">
+                                <span>Доход заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/analytics/employees">
+                                <span>Доход бильярдной по сотрудникам</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class=" wrapper__main">
+        <section class="content__main">
+                <div class="user">
+        <div class="user__title">
+            <h2>Заказ</h2>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-7">
+                <div class="filter-block filter-order">
+                    <div class="filter-form">
+                        <div class="row">
+
+
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Номер</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>№123021</p>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Клиент</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                                                            Гoсть                                                                    </p>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-xs-6"><label>Начало</label></div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>2021-08-13 13:53:31</p>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-xs-6"><label>Скидка (%)</label></div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    0
+                                </p>
+                            </div>
+
+                            
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Конец</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>2021-08-13 18:26:31</p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Тип Оплаты</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                                                    <p>
+                                        Наличными
+                                    </p>
+                                                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Смена</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                                                            3093
+                                                                    </p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Сотрудник</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>Сулім Роман</p>
+                            </div>
+                            
+                                                            <div class="col-xs-12">
+                                    <div class="buttons">
+                                        <a class="modalShow" data-fancybox="" data-src="#order_read" href="javascript:;">Редактировать</a>
+                                    </div>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+        <div class="table_user table-responsive ">
+            <table>
+                <thead>
+                <tr class="td-one">
+                    <td>ID</td>
+                    <td>Товар</td>
+                    <td>Цена</td>
+                    <td>Количество</td>
+                    <td>Сумма</td>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+                        <td>1</td>
+                        <td>№1 пул</td>
+                        <td></td>
+                        <td></td>
+                        <td>409.5</td>
+                    </tr>
+                                                                                    </tbody>
+            </table>
+        </div>
+        <div class="subtotal">
+            <div class="subtotal-title">
+                <p>Итого</p>
+            </div>
+            <div class="subtotal-price">
+                <p>409.5 <img src="http://tt.bb-crm.com/img/many-orange.png" alt="many"></p>
+            </div>
+        </div>
+    </div>
+            <div id="order_read" style="display: none;" class="FancyWindow">
+            <div class="form-user form-user-order">
+                <div class="row">
+                    <div class="col-md-5 col-sm-6">
+                        <p><span>ID : 123021</span></p>
+                    </div>
+                    <div class="col-md-7 col-sm-6">
+                        <p class="p">
+                            <span class="h4">Редактирование</span>
+                        </p>
+                    </div>
+                </div>
+                <order-read id="123021"></order-read>
+            </div>
+        </div>
+            </section>
+    </div>
+</div>
+</body>
+
+<!-- Mirrored from tt.bb-crm.com/orders/123021 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 12:39:10 GMT -->
+</html>

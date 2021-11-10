@@ -1,0 +1,2480 @@
+<!doctype html>
+<html lang="ru">
+
+<!-- Mirrored from tt.bb-crm.com/doc/acts/651 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 12:39:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1 , user-scalable=0, shrink-to-fit=no">
+    <meta name="csrf-token" content="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+    <title>BilliardCRM</title>
+
+    
+
+
+    <link rel="stylesheet" href="http://tt.bb-crm.com/old/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://tt.bb-crm.com/old/bower_components/Ionicons/css/ionicons.min.css">
+
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" media="screen" type="text/css" href="http://tt.bb-crm.com/old//css/demo.css"/>
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="http://tt.bb-crm.com/css/app.css" rel="stylesheet">
+    <link href="http://tt.bb-crm.com/old/css/main.css" rel="stylesheet">
+    <link href="http://tt.bb-crm.com/css/my.css" rel="stylesheet">
+    <script>
+        var LanguneThisJs = 'ru';
+    </script>
+    
+    <script src="http://tt.bb-crm.com/libs/jquery.min.js"></script>
+    <script src="http://tt.bb-crm.com/libs/jquery.fancybox.min.js"></script>
+    <script src="http://tt.bb-crm.com/js/app.js" defer></script>
+
+</head>
+<body class="sidebar-mini">
+<div class="wrapper" id="app">
+    <header class="header__main">
+        <a href="http://tt.bb-crm.com/" class="logo decstor">
+            <span class="logo-mini"><img src="http://tt.bb-crm.com/img/logo 1.png" alt="logo"></span>
+            <span class="logo-lg"><img src="http://tt.bb-crm.com/img/logo 1.png" alt="logo"><span>BilliardCRM</span></span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" id="SidebarToggle" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    
+
+                    <messages-header></messages-header>
+
+                    <li class="calendar-menu  d-none d-md-block ">
+                        <clock-header></clock-header>
+                    </li>
+                    <li class="time-menu  d-none d-md-block "></li>
+                    <li class="locale">
+                        <a class="" href="http://tt.bb-crm.com/sessionLng?lng=ua">
+                            <span class="time">UA</span>
+                        </a>
+                    </li>
+                    <li class="locale">
+                        <a class=" active " href="http://tt.bb-crm.com/sessionLng?lng=ru">
+                            <span class="time">RU</span>
+                        </a>
+                    </li>
+                                            <li class="user user-menu">
+                            <a href="#">
+                                <span>Aleks Majlo</span>
+                            </a>
+                        </li>
+                                        <li>
+                        <a href="http://tt.bb-crm.com/logout"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                           data-toggle="control-sidebar">Выход</a>
+                    </li>
+                    <form id="logout-form" action="http://tt.bb-crm.com/logout" method="POST" style="display: none;">
+                        <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar__main">
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/">
+                        <img src="http://tt.bb-crm.com/img/logo 1.png" alt="logo">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/customers">
+                        <img src="http://tt.bb-crm.com/img/menu2.png" alt="База клиентов">
+                        <span>База клиентов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/booking">
+                        <img src="http://tt.bb-crm.com/img/menu3.png" alt="Бронирования">
+                        <span> Бронирования</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/table_open">
+                        <img src="http://tt.bb-crm.com/img/menu4.png" alt="Открытые столы">
+                        <span>Открытые столы</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="http://tt.bb-crm.com/bars">
+                        <img src="http://tt.bb-crm.com/img/menu5.png" alt="Открытые заказы">
+                        <span>Открытые заказы</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="http://tt.bb-crm.com/img/menu6.png" alt="Конфигурация">
+                        <span>Конфигурация</span>
+                        <span class="pull-right-container">
+							    <i class="fa fa-angle-left pull-right"></i>
+						</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="http://tt.bb-crm.com/tables">Бильярдные столы</a></li>
+                        <li><a href="http://tt.bb-crm.com/users"> Пользователи бэк-офиса</a></li>
+                        <li><a href="http://tt.bb-crm.com/sockets">Оборудование</a></li>
+                        
+                        <li><a href="http://tt.bb-crm.com/coupons">Купоны</a></li>
+                        <li><a href="http://tt.bb-crm.com/keys">Апи ключи</a></li>
+                        <li><a target="__blank" href="http://tt.bb-crm.com/logs">Log</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="http://tt.bb-crm.com/img/menu7.png" alt="Склад">
+                        <span>Cклад</span>
+                        <span class="pull-right-container">
+                                                <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="http://tt.bb-crm.com/ingredients"> <span>Инградиенты</span></a></li>
+                        <li><a href="http://tt.bb-crm.com/products"> <span>Товары</span></a></li>
+                        <li><a href="http://tt.bb-crm.com/categories"> <span>Категории</span></a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="http://tt.bb-crm.com/img/menu8.png" alt="Документы">
+                        <span>Документы</span>
+                        <span class="pull-right-container">
+                                                                   <i class="fa fa-angle-left pull-right"></i>
+                                                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="http://tt.bb-crm.com/doc/acts">
+                                <span>Акты</span></a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/doc/consignments">
+                                <span>Расходные накладные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/doc/purchaseinvoices">
+                                <span>Приходная накладная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/doc/writeofs">
+                                <span>Списание продуктов</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/orders">
+                        <img src="http://tt.bb-crm.com/img/menu9.png" alt="История заказов">
+                        <span>История заказов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/changes">
+                        <img src="http://tt.bb-crm.com/img/menu10.png" alt="Смена">
+                        <span>Смены</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="http://tt.bb-crm.com/img/menu11.png" alt="Аналитика">
+                        <span>Аналитика</span>
+                        <span class="pull-right-container">
+                                               <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="http://tt.bb-crm.com/analytics/attendance">
+                                <span>Посещаемость заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/analytics/popularity-tables">
+                                <span>Популярность столов</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/analytics/incomes">
+                                <span>Доход заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/analytics/employees">
+                                <span>Доход бильярдной по сотрудникам</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class=" wrapper__main">
+        <section class="content__main">
+                <div class="user">
+        <div class="user__title">
+            <h2>Акт #651 </h2>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-7 col-xs-xs-12">
+                <div class="filter-block filter-worker">
+                    <div class="filter-form">
+                        <div class="row">
+                            <div class="col-xs-5 col-xs-xs-xs-6">
+                                <label>Сотрудник</label>
+                            </div>
+                            <div class="col-xs-7 col-xs-xs-xs-6">
+                                <p> Оля Собчук</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-5 col-xs-xs-xs-6">
+                                <label>Дата и время инвентаризации</label>
+                            </div>
+                            <div class="col-xs-7 col-xs-xs-xs-6">
+                                <p>2021-04-28 11:37:19</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-5 col-xs-xs-12 actOne">
+                <div class="blue worker">
+                    <form method="get" id="searchform">
+                        <input name="title" type="text" value="">
+                                                <button type="submit">
+                            <img src="http://tt.bb-crm.com/img/search.png" alt="search">
+                        </button>
+                    </form>
+                    <div class="worker-button">
+                        <a class="worker__button worker__export" href="http://tt.bb-crm.com/doc/act/export/651">
+                            <img src="http://tt.bb-crm.com/img/export.png" alt="colendar">
+                            <span>Экспорт в excel</span>
+                        </a>
+                        <doc-print id="print" header="Акт #651  2021-04-28 11:37:19"></doc-print>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                Сортировка:
+                <b>
+                                            Категория                                    </b>
+                -
+                <b>
+                                                                         c последних                                            
+                </b>
+            </div>
+        </div>
+        <div class="user_table table-responsive" id="print">
+            <table>
+                <thead>
+                <tr>
+                    <td>
+                        Наименование                        <form style="display:none;" action="http://tt.bb-crm.com/doc/writeof/sort" method="post">
+                            <input type="hidden" name="sort" value="title">
+                            <input type="hidden" name="type" value="">
+                            <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                        </form>
+                                                    <a href="#" data-type="desc" class="DocSortOrder categoryDocSortOrderDESC">
+                                <img src="http://tt.bb-crm.com/img/arrey.png" alt="arrey">
+                            </a>
+                                            </td>
+                    <td>
+                        Категория                        <form style="display:none;" action="http://tt.bb-crm.com/doc/writeof/sort" method="post">
+                            <input type="hidden" name="sort" value="cat">
+                            <input type="hidden" name="type" value="">
+                            <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                        </form>
+                                                    <a href="#" data-type="desc" class="DocSortOrder categoryDocSortOrderDESC">
+                                <img src="http://tt.bb-crm.com/img/arrey.png" alt="arrey">
+                            </a>
+                                            </td>
+                    <td>
+                        Тип                        <form style="display:none;" action="http://tt.bb-crm.com/doc/writeof/sort" method="post">
+                            <input type="hidden" name="sort" value="type">
+                            <input type="hidden" name="type" value="">
+                            <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                        </form>
+                                                    <a href="#" data-type="desc" class="DocSortOrder categoryDocSortOrderDESC">
+                                <img src="http://tt.bb-crm.com/img/arrey.png" alt="arrey">
+                            </a>
+                                            </td>
+                    <td>
+                        На складе                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr>
+    <td>ВИНО VILLA KRIM</td>
+    <td>
+                    Вино і шампанське
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 2</td>
+</tr>
+                                    <tr>
+    <td>ВИНО АДЖАРІ</td>
+    <td>
+                    Вино і шампанське
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 3</td>
+</tr>
+                                    <tr>
+    <td>ВИНО АДЖАРІ</td>
+    <td>
+                    Вино і шампанське
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 3</td>
+</tr>
+                                    <tr>
+    <td>ВИНО VILLA KRIM</td>
+    <td>
+                    Вино і шампанське
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 2</td>
+</tr>
+                                    <tr>
+    <td>Шампанське VILLA KRIM</td>
+    <td>
+                    Вино і шампанське
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 3</td>
+</tr>
+                                    <tr>
+    <td>Шампанське VILLA KRIM</td>
+    <td>
+                    Вино і шампанське
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 3</td>
+</tr>
+                                    <tr>
+    <td>Шампанське VILLA KRIM</td>
+    <td>
+                    Вино і шампанське
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 3</td>
+</tr>
+                                    <tr>
+    <td>ВИНО VILLA KRIM</td>
+    <td>
+                    Вино і шампанське
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 2</td>
+</tr>
+                                    <tr>
+    <td>ВИНО АДЖАРІ</td>
+    <td>
+                    Вино і шампанське
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 3</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ JAMESON 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 3</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ JACK DANIELS HONEY 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 33</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ JACK DANIELS 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 1</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ WILLIAM TEACHER’S 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 40</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ JIM BEAM BOURBON 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 25</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ RED LABEL 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 25.5</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ WILLIAM LAWSON’S 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 42.5</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ WILLIAM LAWSON’S 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 42.5</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ JIM BEAM REG STAG 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 14</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ JACK DANIELS HONEY 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 33</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ WILLIAM LAWSON’S super spiced 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ JIM BEAM REG STAG 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 14</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ WILLIAM LAWSON’S super spiced 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ WILLIAM TEACHER’S 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 40</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ RED LABEL 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 25.5</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ JACK DANIELS 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 1</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ JAMESON 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 3</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ JIM BEAM BOURBON 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 25</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ RED LABEL 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 25.5</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ WILLIAM TEACHER’S 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 40</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ WILLIAM LAWSON’S 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 42.5</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ JIM BEAM REG STAG 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 14</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ JACK DANIELS HONEY 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 33</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ JACK DANIELS 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 1</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ JAMESON 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 3</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ WILLIAM LAWSON’S super spiced 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>ВІСКІ JIM BEAM BOURBON 50Г</td>
+    <td>
+                    Віскі
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 25</td>
+</tr>
+                                    <tr>
+    <td>ГОРІЛКА MARLIN 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 20</td>
+</tr>
+                                    <tr>
+    <td>ГОРІЛКА ХЕЛЬСІНКІ 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 34</td>
+</tr>
+                                    <tr>
+    <td>КОНЬЯК KLINKOV S-CLASS 5*ЗІРОК   50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 14</td>
+</tr>
+                                    <tr>
+    <td>КОНЬЯК АДЖАРI 5* 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 36</td>
+</tr>
+                                    <tr>
+    <td>ГОРІЛКА MARLIN 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 20</td>
+</tr>
+                                    <tr>
+    <td>КОНЬЯК ЖАН ЖАК 3* 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 46</td>
+</tr>
+                                    <tr>
+    <td>КОНЬЯК KLINKOV S-CLASS 5*ЗІРОК   50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 14</td>
+</tr>
+                                    <tr>
+    <td>КОНЬЯК АДЖАРI 5* 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 36</td>
+</tr>
+                                    <tr>
+    <td>КОНЬЯК ЖАН ЖАК МЕДОВИЙ 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 30</td>
+</tr>
+                                    <tr>
+    <td>ГОРІЛКА GREEN DAY 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 99.5</td>
+</tr>
+                                    <tr>
+    <td>ГОРІЛКА MARLIN 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 20</td>
+</tr>
+                                    <tr>
+    <td>ГОРІЛКА ХЕЛЬСІНКІ 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 34</td>
+</tr>
+                                    <tr>
+    <td>КОНЬЯК ЖАН ЖАК МЕДОВИЙ 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 30</td>
+</tr>
+                                    <tr>
+    <td>КОНЬЯК ЖАН ЖАК 3* 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 46</td>
+</tr>
+                                    <tr>
+    <td>ГОРІЛКА GREEN DAY 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 99.5</td>
+</tr>
+                                    <tr>
+    <td>ГОРІЛКА GREEN DAY 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 99.5</td>
+</tr>
+                                    <tr>
+    <td>ГОРІЛКА ХЕЛЬСІНКІ 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 34</td>
+</tr>
+                                    <tr>
+    <td>КОНЬЯК KLINKOV S-CLASS 5*ЗІРОК   50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 14</td>
+</tr>
+                                    <tr>
+    <td>КОНЬЯК АДЖАРI 5* 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 36</td>
+</tr>
+                                    <tr>
+    <td>КОНЬЯК ЖАН ЖАК 3* 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 46</td>
+</tr>
+                                    <tr>
+    <td>КОНЬЯК ЖАН ЖАК МЕДОВИЙ 50Г</td>
+    <td>
+                    Горілка-коньяк
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 30</td>
+</tr>
+                                    <tr>
+    <td>ЗІЗ</td>
+    <td>
+                    ЗІЗ
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16</td>
+</tr>
+                                    <tr>
+    <td>ЗІЗ</td>
+    <td>
+                    ЗІЗ
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16</td>
+</tr>
+                                    <tr>
+    <td>ЗІЗ</td>
+    <td>
+                    ЗІЗ
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16</td>
+</tr>
+                                    <tr>
+    <td>ПИВО КОРОНА</td>
+    <td>
+                    Пиво
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 21</td>
+</tr>
+                                    <tr>
+    <td>ПИВО STELLA ARTOIS б/а</td>
+    <td>
+                    Пиво
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 21</td>
+</tr>
+                                    <tr>
+    <td>ПИВО STELLA ARTOIS б/а</td>
+    <td>
+                    Пиво
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 21</td>
+</tr>
+                                    <tr>
+    <td>ПИВО КОРОНА</td>
+    <td>
+                    Пиво
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 21</td>
+</tr>
+                                    <tr>
+    <td>ПИВО STELLA ARTOIS б/а</td>
+    <td>
+                    Пиво
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 21</td>
+</tr>
+                                    <tr>
+    <td>ПИВО КОРОНА</td>
+    <td>
+                    Пиво
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 21</td>
+</tr>
+                                    <tr>
+    <td>ТЕКІЛА SILVER 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 30</td>
+</tr>
+                                    <tr>
+    <td>ЛІКЕР VANNA TALLINN cream 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 8.5</td>
+</tr>
+                                    <tr>
+    <td>ЛІКЕР JAGERMEISTER 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 14</td>
+</tr>
+                                    <tr>
+    <td>САМБУКА 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 12</td>
+</tr>
+                                    <tr>
+    <td>ТЕКІЛА SILVER 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 30</td>
+</tr>
+                                    <tr>
+    <td>МАRТІNІ BIANCO 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16</td>
+</tr>
+                                    <tr>
+    <td>МАRТІNI ROSSO 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16</td>
+</tr>
+                                    <tr>
+    <td>ТЕКІЛА GOLD 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 20</td>
+</tr>
+                                    <tr>
+    <td>ТЕКІЛА GOLD 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 20</td>
+</tr>
+                                    <tr>
+    <td>АБСЕНТ XENTA 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16.5</td>
+</tr>
+                                    <tr>
+    <td>ЛІКЕР VANNA TALLINN 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>ДЖИН FINSBURY 50г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 20.5</td>
+</tr>
+                                    <tr>
+    <td>БЕХЕРОВКА 50г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 12</td>
+</tr>
+                                    <tr>
+    <td>САМБУКА 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 12</td>
+</tr>
+                                    <tr>
+    <td>МАRТІNІ BIANCO 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16</td>
+</tr>
+                                    <tr>
+    <td>МАRТІNI ROSSO 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16</td>
+</tr>
+                                    <tr>
+    <td>ЛІКЕР JAGERMEISTER 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 14</td>
+</tr>
+                                    <tr>
+    <td>САМБУКА 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 12</td>
+</tr>
+                                    <tr>
+    <td>ЛІКЕР JAGERMEISTER 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 14</td>
+</tr>
+                                    <tr>
+    <td>ЛІКЕР VANNA TALLINN cream 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 8.5</td>
+</tr>
+                                    <tr>
+    <td>ЛІКЕР VANNA TALLINN cream 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 8.5</td>
+</tr>
+                                    <tr>
+    <td>ЛІКЕР VANNA TALLINN 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>БЕХЕРОВКА 50г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 12</td>
+</tr>
+                                    <tr>
+    <td>ДЖИН FINSBURY 50г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 20.5</td>
+</tr>
+                                    <tr>
+    <td>ТЕКІЛА SILVER 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 30</td>
+</tr>
+                                    <tr>
+    <td>АБСЕНТ XENTA 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16.5</td>
+</tr>
+                                    <tr>
+    <td>БЕХЕРОВКА 50г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 12</td>
+</tr>
+                                    <tr>
+    <td>ДЖИН FINSBURY 50г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 20.5</td>
+</tr>
+                                    <tr>
+    <td>ЛІКЕР VANNA TALLINN 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>МАRТІNI ROSSO 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16</td>
+</tr>
+                                    <tr>
+    <td>АБСЕНТ XENTA 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16.5</td>
+</tr>
+                                    <tr>
+    <td>МАRТІNІ BIANCO 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16</td>
+</tr>
+                                    <tr>
+    <td>ТЕКІЛА GOLD 50Г</td>
+    <td>
+                    Решта алкоголь
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 20</td>
+</tr>
+                                    <tr>
+    <td>РОМ CAPTAIN MORGAN white 50Г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 15</td>
+</tr>
+                                    <tr>
+    <td>РОМ BAKARDI carta negra 50Г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 29</td>
+</tr>
+                                    <tr>
+    <td>РОМ OAKHERT 50Г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 22</td>
+</tr>
+                                    <tr>
+    <td>РОМ CAPTAIN MORGAN spiced gold 50г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 1</td>
+</tr>
+                                    <tr>
+    <td>РОМ CAPTAIN MORGAN white 50Г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 15</td>
+</tr>
+                                    <tr>
+    <td>РОМ BAKARDI carta blanka 50Г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0.5</td>
+</tr>
+                                    <tr>
+    <td>РОМ BAKARDI spiced gold 50Г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 5</td>
+</tr>
+                                    <tr>
+    <td>РОМ BAKARDI carta negra 50Г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 29</td>
+</tr>
+                                    <tr>
+    <td>РОМ CAPTAIN MORGAN spiced gold 50г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 1</td>
+</tr>
+                                    <tr>
+    <td>РОМ OAKHERT 50Г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 22</td>
+</tr>
+                                    <tr>
+    <td>РОМ BAKARDI carta blanka 50Г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0.5</td>
+</tr>
+                                    <tr>
+    <td>РОМ OAKHERT 50Г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 22</td>
+</tr>
+                                    <tr>
+    <td>РОМ BAKARDI carta negra 50Г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 29</td>
+</tr>
+                                    <tr>
+    <td>РОМ BAKARDI spiced gold 50Г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 5</td>
+</tr>
+                                    <tr>
+    <td>РОМ BAKARDI carta blanka 50Г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0.5</td>
+</tr>
+                                    <tr>
+    <td>РОМ CAPTAIN MORGAN white 50Г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 15</td>
+</tr>
+                                    <tr>
+    <td>РОМ CAPTAIN MORGAN spiced gold 50г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 1</td>
+</tr>
+                                    <tr>
+    <td>РОМ BAKARDI spiced gold 50Г</td>
+    <td>
+                    Ром
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 5</td>
+</tr>
+                                    <tr>
+    <td>ВАФЕЛЬКА / КЕКС</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 8</td>
+</tr>
+                                    <tr>
+    <td>ГОРІШКИ АРАХІС 30г МАЛЕНЬКІ</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 10</td>
+</tr>
+                                    <tr>
+    <td>ГОРІШКИ FELIX ж/б</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 4</td>
+</tr>
+                                    <tr>
+    <td>БАСТРУМА</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>ДЖЕРКІ</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>СУДЖУК</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 4</td>
+</tr>
+                                    <tr>
+    <td>МАХАН</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 5</td>
+</tr>
+                                    <tr>
+    <td>ГОРІШКИ 100г SOLTINO</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 7</td>
+</tr>
+                                    <tr>
+    <td>ПЕЧИВО</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 2</td>
+</tr>
+                                    <tr>
+    <td>СУХАРИКИ ХРУСteam В АСОРТИМЕНТІ</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 33</td>
+</tr>
+                                    <tr>
+    <td>ЧІПСИ Lays</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 38</td>
+</tr>
+                                    <tr>
+    <td>ШОКОЛАД</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 6</td>
+</tr>
+                                    <tr>
+    <td>ГОРІШКИ АРАХІС 30г МАЛЕНЬКІ</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 10</td>
+</tr>
+                                    <tr>
+    <td>СУХАРИКИ ХРУСteam В АСОРТИМЕНТІ</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 33</td>
+</tr>
+                                    <tr>
+    <td>БАСТРУМА</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>ШОКОЛАД</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 6</td>
+</tr>
+                                    <tr>
+    <td>ЧІПСИ Lays</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 38</td>
+</tr>
+                                    <tr>
+    <td>ГОРІШКИ FELIX ж/б</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 4</td>
+</tr>
+                                    <tr>
+    <td>ГОРІШКИ АРАХІС 30г МАЛЕНЬКІ</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 10</td>
+</tr>
+                                    <tr>
+    <td>СУХАРИКИ ХРУСteam В АСОРТИМЕНТІ</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 33</td>
+</tr>
+                                    <tr>
+    <td>ВАФЕЛЬКА / КЕКС</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 8</td>
+</tr>
+                                    <tr>
+    <td>ПЕЧИВО</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 2</td>
+</tr>
+                                    <tr>
+    <td>ГОРІШКИ 100г SOLTINO</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 7</td>
+</tr>
+                                    <tr>
+    <td>МАХАН</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 5</td>
+</tr>
+                                    <tr>
+    <td>СУДЖУК</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 4</td>
+</tr>
+                                    <tr>
+    <td>ДЖЕРКІ</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>СУДЖУК</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 4</td>
+</tr>
+                                    <tr>
+    <td>ВАФЕЛЬКА / КЕКС</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 8</td>
+</tr>
+                                    <tr>
+    <td>ШОКОЛАД</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 6</td>
+</tr>
+                                    <tr>
+    <td>ЧІПСИ Lays</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 38</td>
+</tr>
+                                    <tr>
+    <td>ГОРІШКИ FELIX ж/б</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 4</td>
+</tr>
+                                    <tr>
+    <td>БАСТРУМА</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>ДЖЕРКІ</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>МАХАН</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 5</td>
+</tr>
+                                    <tr>
+    <td>ГОРІШКИ 100г SOLTINO</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 7</td>
+</tr>
+                                    <tr>
+    <td>ПЕЧИВО</td>
+    <td>
+                    Снеки
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 2</td>
+</tr>
+                                    <tr>
+    <td>СПРАЙТ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 17</td>
+</tr>
+                                    <tr>
+    <td>ШВЕПС 0,25 В СКЛІ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 14</td>
+</tr>
+                                    <tr>
+    <td>КОКА-КОЛА 0,25 В СКЛІ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 4</td>
+</tr>
+                                    <tr>
+    <td>КОКА-КОЛА 0,25 В СКЛІ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 4</td>
+</tr>
+                                    <tr>
+    <td>RED BULL  ЕНЕРГЕТИЧНИЙ НАПІЙ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>ШВЕПС 0,25 В СКЛІ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 14</td>
+</tr>
+                                    <tr>
+    <td>BURN ЕНЕРГЕТИЧНИЙ НАПІЙ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 4</td>
+</tr>
+                                    <tr>
+    <td>RED BULL  ЕНЕРГЕТИЧНИЙ НАПІЙ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>ФАНТА</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 24</td>
+</tr>
+                                    <tr>
+    <td>НАПІЙ &quot;FUZЕ TEА&quot; 0,5 В АСОРТИМЕНТІ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16</td>
+</tr>
+                                    <tr>
+    <td>RED BULL  ЕНЕРГЕТИЧНИЙ НАПІЙ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>ФАНТА</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 24</td>
+</tr>
+                                    <tr>
+    <td>BURN ЕНЕРГЕТИЧНИЙ НАПІЙ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 4</td>
+</tr>
+                                    <tr>
+    <td>НАПІЙ &quot;FUZЕ TEА&quot; 0,5 В АСОРТИМЕНТІ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16</td>
+</tr>
+                                    <tr>
+    <td>КОКА КОЛА</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 8</td>
+</tr>
+                                    <tr>
+    <td>СІК Rich 200МЛ В АСОРТИМЕНТІ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 88</td>
+</tr>
+                                    <tr>
+    <td>КОКА КОЛА</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 8</td>
+</tr>
+                                    <tr>
+    <td>КОКА-КОЛА 0,25 В СКЛІ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 4</td>
+</tr>
+                                    <tr>
+    <td>ШВЕПС 0,25 В СКЛІ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 14</td>
+</tr>
+                                    <tr>
+    <td>СПРАЙТ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 17</td>
+</tr>
+                                    <tr>
+    <td>BURN ЕНЕРГЕТИЧНИЙ НАПІЙ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 4</td>
+</tr>
+                                    <tr>
+    <td>СПРАЙТ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 17</td>
+</tr>
+                                    <tr>
+    <td>НАПІЙ &quot;FUZЕ TEА&quot; 0,5 В АСОРТИМЕНТІ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16</td>
+</tr>
+                                    <tr>
+    <td>КОКА КОЛА</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 8</td>
+</tr>
+                                    <tr>
+    <td>ВОДА BON-AQVA В АСОРТИМЕНТІ 0.5</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16</td>
+</tr>
+                                    <tr>
+    <td>СІК Rich 200МЛ В АСОРТИМЕНТІ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 88</td>
+</tr>
+                                    <tr>
+    <td>ВОДА BON-AQVA В АСОРТИМЕНТІ 0.5</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16</td>
+</tr>
+                                    <tr>
+    <td>СІК Rich 200МЛ В АСОРТИМЕНТІ</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 88</td>
+</tr>
+                                    <tr>
+    <td>ВОДА BON-AQVA В АСОРТИМЕНТІ 0.5</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 16</td>
+</tr>
+                                    <tr>
+    <td>ФАНТА</td>
+    <td>
+                    Соки та води
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 24</td>
+</tr>
+                                    <tr>
+    <td>АПЕЛЬСИН ПОРЦ</td>
+    <td>
+                    Чай, фрукти, гренадін
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 3</td>
+</tr>
+                                    <tr>
+    <td>ГРЕНАДІН</td>
+    <td>
+                    Чай, фрукти, гренадін
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 3</td>
+</tr>
+                                    <tr>
+    <td>ЛИМОН ПОРЦІЯ 1/2</td>
+    <td>
+                    Чай, фрукти, гренадін
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 2</td>
+</tr>
+                                    <tr>
+    <td>ЧАЙ ПАКЕТОВАНИЙ</td>
+    <td>
+                    Чай, фрукти, гренадін
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 25</td>
+</tr>
+                                    <tr>
+    <td>ЛИМОН ПОРЦІЯ 1/2</td>
+    <td>
+                    Чай, фрукти, гренадін
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 2</td>
+</tr>
+                                    <tr>
+    <td>ГРЕНАДІН</td>
+    <td>
+                    Чай, фрукти, гренадін
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 3</td>
+</tr>
+                                    <tr>
+    <td>АПЕЛЬСИН ПОРЦ</td>
+    <td>
+                    Чай, фрукти, гренадін
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 3</td>
+</tr>
+                                    <tr>
+    <td>АПЕЛЬСИН ПОРЦ</td>
+    <td>
+                    Чай, фрукти, гренадін
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 3</td>
+</tr>
+                                    <tr>
+    <td>ГРЕНАДІН</td>
+    <td>
+                    Чай, фрукти, гренадін
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 3</td>
+</tr>
+                                    <tr>
+    <td>ЛИМОН ПОРЦІЯ 1/2</td>
+    <td>
+                    Чай, фрукти, гренадін
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 2</td>
+</tr>
+                                    <tr>
+    <td>ЧАЙ ПАКЕТОВАНИЙ</td>
+    <td>
+                    Чай, фрукти, гренадін
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 25</td>
+</tr>
+                                    <tr>
+    <td>ЧАЙ ПАКЕТОВАНИЙ</td>
+    <td>
+                    Чай, фрукти, гренадін
+            </td>
+    <td>
+                    Товар            </td>
+    <td> 25</td>
+</tr>
+                                    <tr>
+    <td>Картопля фрі</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 11</td>
+</tr>
+                                    <tr>
+    <td>Картопля фрі</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 11</td>
+</tr>
+                                    <tr>
+    <td>Картопля фрі</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 11</td>
+</tr>
+                                    <tr>
+    <td>Ковбаски мисл</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 10</td>
+</tr>
+                                    <tr>
+    <td>Ковбаски мисл</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 10</td>
+</tr>
+                                    <tr>
+    <td>Ковбаски мисл</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 10</td>
+</tr>
+                                    <tr>
+    <td>Цибулеві кільця</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 8</td>
+</tr>
+                                    <tr>
+    <td>Цибулеві кільця</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 8</td>
+</tr>
+                                    <tr>
+    <td>Цибулеві кільця</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 8</td>
+</tr>
+                                    <tr>
+    <td>Пельмені</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 6</td>
+</tr>
+                                    <tr>
+    <td>Пельмені</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 6</td>
+</tr>
+                                    <tr>
+    <td>Пельмені</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 6</td>
+</tr>
+                                    <tr>
+    <td>Масло</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 10</td>
+</tr>
+                                    <tr>
+    <td>Масло</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 10</td>
+</tr>
+                                    <tr>
+    <td>Масло</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 10</td>
+</tr>
+                                    <tr>
+    <td>Кетчуп</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 11</td>
+</tr>
+                                    <tr>
+    <td>Кетчуп</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 11</td>
+</tr>
+                                    <tr>
+    <td>Кетчуп</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 11</td>
+</tr>
+                                    <tr>
+    <td>Сметана</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>Сметана</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>Сметана</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>Нагетси з чедером 200г</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 7</td>
+</tr>
+                                    <tr>
+    <td>Нагетси з чедером 200г</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 7</td>
+</tr>
+                                    <tr>
+    <td>Нагетси з чедером 200г</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 7</td>
+</tr>
+                                    <tr>
+    <td>Молоко 25</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 53</td>
+</tr>
+                                    <tr>
+    <td>Молоко 25</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 53</td>
+</tr>
+                                    <tr>
+    <td>Молоко 25</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 53</td>
+</tr>
+                                    <tr>
+    <td>Вареники</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>Вареники</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>Вареники</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>Пиво розливне ХМЕЛЕВУС</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 24.5</td>
+</tr>
+                                    <tr>
+    <td>Пиво розливне ХМЕЛЕВУС</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 24.5</td>
+</tr>
+                                    <tr>
+    <td>Пиво розливне ХМЕЛЕВУС</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 24.5</td>
+</tr>
+                                    <tr>
+    <td>Пиво розливне Stella Artois</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 10.75</td>
+</tr>
+                                    <tr>
+    <td>Пиво розливне Stella Artois</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 10.75</td>
+</tr>
+                                    <tr>
+    <td>Пиво розливне Stella Artois</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 10.75</td>
+</tr>
+                                    <tr>
+    <td>Лаваш з мисл сосиск</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>Лаваш з мисл сосиск</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>Лаваш з мисл сосиск</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 0</td>
+</tr>
+                                    <tr>
+    <td>Соус бургерний 50г</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 19.5</td>
+</tr>
+                                    <tr>
+    <td>Соус бургерний 50г</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 19.5</td>
+</tr>
+                                    <tr>
+    <td>Соус бургерний 50г</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 19.5</td>
+</tr>
+                                    <tr>
+    <td>Цибулеві чоруси 125г</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 5</td>
+</tr>
+                                    <tr>
+    <td>Цибулеві чоруси 125г</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 5</td>
+</tr>
+                                    <tr>
+    <td>Цибулеві чоруси 125г</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 5</td>
+</tr>
+                                    <tr>
+    <td>Пиво розливне Чернігівське Біле Нефільтр</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 24.75</td>
+</tr>
+                                    <tr>
+    <td>Пиво розливне Чернігівське Біле Нефільтр</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 24.75</td>
+</tr>
+                                    <tr>
+    <td>Пиво розливне Чернігівське Біле Нефільтр</td>
+    <td>
+            </td>
+    <td>
+                    Составляющая            </td>
+    <td> 24.75</td>
+</tr>
+                                                                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+        </section>
+    </div>
+</div>
+</body>
+
+<!-- Mirrored from tt.bb-crm.com/doc/acts/651 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 12:39:23 GMT -->
+</html>

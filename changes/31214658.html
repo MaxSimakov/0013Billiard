@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="ru">
+
+<!-- Mirrored from tt.bb-crm.com/changes/3121?page=2 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 12:39:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1 , user-scalable=0, shrink-to-fit=no">
+    <meta name="csrf-token" content="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+    <title>BilliardCRM</title>
+
+    
+
+
+    <link rel="stylesheet" href="http://tt.bb-crm.com/old/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://tt.bb-crm.com/old/bower_components/Ionicons/css/ionicons.min.css">
+
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" media="screen" type="text/css" href="http://tt.bb-crm.com/old//css/demo.css"/>
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="http://tt.bb-crm.com/css/app.css" rel="stylesheet">
+    <link href="http://tt.bb-crm.com/old/css/main.css" rel="stylesheet">
+    <link href="http://tt.bb-crm.com/css/my.css" rel="stylesheet">
+    <script>
+        var LanguneThisJs = 'ru';
+    </script>
+    
+    <script src="http://tt.bb-crm.com/libs/jquery.min.js"></script>
+    <script src="http://tt.bb-crm.com/libs/jquery.fancybox.min.js"></script>
+    <script src="http://tt.bb-crm.com/js/app.js" defer></script>
+
+</head>
+<body class="sidebar-mini">
+<div class="wrapper" id="app">
+    <header class="header__main">
+        <a href="http://tt.bb-crm.com/" class="logo decstor">
+            <span class="logo-mini"><img src="http://tt.bb-crm.com/img/logo 1.png" alt="logo"></span>
+            <span class="logo-lg"><img src="http://tt.bb-crm.com/img/logo 1.png" alt="logo"><span>BilliardCRM</span></span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" id="SidebarToggle" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    
+
+                    <messages-header></messages-header>
+
+                    <li class="calendar-menu  d-none d-md-block ">
+                        <clock-header></clock-header>
+                    </li>
+                    <li class="time-menu  d-none d-md-block "></li>
+                    <li class="locale">
+                        <a class="" href="http://tt.bb-crm.com/sessionLng?lng=ua">
+                            <span class="time">UA</span>
+                        </a>
+                    </li>
+                    <li class="locale">
+                        <a class=" active " href="http://tt.bb-crm.com/sessionLng?lng=ru">
+                            <span class="time">RU</span>
+                        </a>
+                    </li>
+                                            <li class="user user-menu">
+                            <a href="#">
+                                <span>Aleks Majlo</span>
+                            </a>
+                        </li>
+                                        <li>
+                        <a href="http://tt.bb-crm.com/logout"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                           data-toggle="control-sidebar">Выход</a>
+                    </li>
+                    <form id="logout-form" action="http://tt.bb-crm.com/logout" method="POST" style="display: none;">
+                        <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar__main">
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/">
+                        <img src="http://tt.bb-crm.com/img/logo 1.png" alt="logo">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/customers">
+                        <img src="http://tt.bb-crm.com/img/menu2.png" alt="База клиентов">
+                        <span>База клиентов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/booking">
+                        <img src="http://tt.bb-crm.com/img/menu3.png" alt="Бронирования">
+                        <span> Бронирования</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/table_open">
+                        <img src="http://tt.bb-crm.com/img/menu4.png" alt="Открытые столы">
+                        <span>Открытые столы</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="http://tt.bb-crm.com/bars">
+                        <img src="http://tt.bb-crm.com/img/menu5.png" alt="Открытые заказы">
+                        <span>Открытые заказы</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="http://tt.bb-crm.com/img/menu6.png" alt="Конфигурация">
+                        <span>Конфигурация</span>
+                        <span class="pull-right-container">
+							    <i class="fa fa-angle-left pull-right"></i>
+						</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="http://tt.bb-crm.com/tables">Бильярдные столы</a></li>
+                        <li><a href="http://tt.bb-crm.com/users"> Пользователи бэк-офиса</a></li>
+                        <li><a href="http://tt.bb-crm.com/sockets">Оборудование</a></li>
+                        
+                        <li><a href="http://tt.bb-crm.com/coupons">Купоны</a></li>
+                        <li><a href="http://tt.bb-crm.com/keys">Апи ключи</a></li>
+                        <li><a target="__blank" href="http://tt.bb-crm.com/logs">Log</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="http://tt.bb-crm.com/img/menu7.png" alt="Склад">
+                        <span>Cклад</span>
+                        <span class="pull-right-container">
+                                                <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="http://tt.bb-crm.com/ingredients"> <span>Инградиенты</span></a></li>
+                        <li><a href="http://tt.bb-crm.com/products"> <span>Товары</span></a></li>
+                        <li><a href="http://tt.bb-crm.com/categories"> <span>Категории</span></a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="http://tt.bb-crm.com/img/menu8.png" alt="Документы">
+                        <span>Документы</span>
+                        <span class="pull-right-container">
+                                                                   <i class="fa fa-angle-left pull-right"></i>
+                                                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="http://tt.bb-crm.com/doc/acts">
+                                <span>Акты</span></a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/doc/consignments">
+                                <span>Расходные накладные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/doc/purchaseinvoices">
+                                <span>Приходная накладная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/doc/writeofs">
+                                <span>Списание продуктов</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/orders">
+                        <img src="http://tt.bb-crm.com/img/menu9.png" alt="История заказов">
+                        <span>История заказов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/changes">
+                        <img src="http://tt.bb-crm.com/img/menu10.png" alt="Смена">
+                        <span>Смены</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="http://tt.bb-crm.com/img/menu11.png" alt="Аналитика">
+                        <span>Аналитика</span>
+                        <span class="pull-right-container">
+                                               <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="http://tt.bb-crm.com/analytics/attendance">
+                                <span>Посещаемость заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/analytics/popularity-tables">
+                                <span>Популярность столов</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/analytics/incomes">
+                                <span>Доход заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/analytics/employees">
+                                <span>Доход бильярдной по сотрудникам</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class=" wrapper__main">
+        <section class="content__main">
+                <div class="user">
+        <div class="user__title">
+            <h2>Смена #3121</h2>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-7">
+                <div class="filter-block filter-order">
+                    <form class="filter-form">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Пользователь</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>Анастасія Винничук (бар)</p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Старт смены</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>2021-08-30 11:17:10</p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Окончание изменения</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                     2021-09-01 01:15:32
+                                </p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Клиентов</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    57
+                                </p>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Наличными</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    7652 ₴
+                                </p>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Картой</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    0 ₴
+                                </p>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Заработанно</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    7652 ₴
+                                </p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Сума на начало</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    0 ₴
+                                </p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Сума на закрытие</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    7652 ₴
+                                </p>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="table_user table-responsive">
+            <table>
+                <thead>
+                <tr class="td-one">
+                    <td>#</td>
+                    <td>Тип</td>
+                    <td>Комментарий</td>
+                    <td>Столы</td>
+                    <td>Дата начала</td>
+                    <td>Дата закрытия</td>
+                    <td>Сумма</td>
+                    <td></td>
+                </tr>
+                </thead>
+
+                <tbody>
+                                    <tr>
+                        <td>124491 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>11 стіл</td>
+                        <td> -</td>
+                        <td>2021-08-30 22:31:46</td>
+                        <td>
+                                                            2021-08-31 00:32:06
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124491">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124493 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>8</td>
+                        <td> -</td>
+                        <td>2021-08-30 23:07:22</td>
+                        <td>
+                                                            2021-08-31 00:58:30
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124493">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124495 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td></td>
+                        <td> -</td>
+                        <td>2021-08-31 00:14:58</td>
+                        <td>
+                                                            2021-08-31 00:59:02
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124495">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124513 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td></td>
+                        <td> -</td>
+                        <td>2021-08-31 13:07:55</td>
+                        <td>
+                                                            2021-08-31 13:08:03
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124513">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124514 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>Роман південний</td>
+                        <td> -</td>
+                        <td>2021-08-31 13:11:25</td>
+                        <td>
+                                                            2021-08-31 15:27:50
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124514">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124516 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>Ірина Ігорівна</td>
+                        <td> -</td>
+                        <td>2021-08-31 14:09:23</td>
+                        <td>
+                                                            2021-08-31 17:14:18
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124516">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124517 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>Кузик</td>
+                        <td> -</td>
+                        <td>2021-08-31 14:30:47</td>
+                        <td>
+                                                            2021-08-31 15:28:17
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124517">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124519 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td></td>
+                        <td> -</td>
+                        <td>2021-08-31 14:37:43</td>
+                        <td>
+                                                            2021-08-31 14:37:53
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124519">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124523 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>6 ствл</td>
+                        <td> -</td>
+                        <td>2021-08-31 16:08:57</td>
+                        <td>
+                                                            2021-08-31 18:01:44
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124523">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124527 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>10 стіл</td>
+                        <td> -</td>
+                        <td>2021-08-31 17:15:24</td>
+                        <td>
+                                                            2021-08-31 17:59:41
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124527">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124528 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>2 стіл</td>
+                        <td> -</td>
+                        <td>2021-08-31 17:16:56</td>
+                        <td>
+                                                            2021-08-31 17:59:56
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124528">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124529 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>7</td>
+                        <td> -</td>
+                        <td>2021-08-31 17:27:32</td>
+                        <td>
+                                                            2021-08-31 18:22:23
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124529">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124530 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td></td>
+                        <td> -</td>
+                        <td>2021-08-31 17:28:44</td>
+                        <td>
+                                                            2021-08-31 17:28:53
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124530">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124534 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>10</td>
+                        <td> -</td>
+                        <td>2021-08-31 18:05:35</td>
+                        <td>
+                                                            2021-08-31 19:21:35
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124534">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124535 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>2 стіл</td>
+                        <td> -</td>
+                        <td>2021-08-31 18:30:47</td>
+                        <td>
+                                                            2021-08-31 20:32:15
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124535">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124539 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>8 стіл</td>
+                        <td> -</td>
+                        <td>2021-08-31 18:55:49</td>
+                        <td>
+                                                            2021-08-31 20:54:22
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124539">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124540 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>Олег</td>
+                        <td> -</td>
+                        <td>2021-08-31 19:30:40</td>
+                        <td>
+                                                            2021-08-31 21:51:35
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124540">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124542 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td></td>
+                        <td> -</td>
+                        <td>2021-08-31 19:41:27</td>
+                        <td>
+                                                            2021-08-31 19:42:08
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124542">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124543 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>11 стіл</td>
+                        <td> -</td>
+                        <td>2021-08-31 19:42:11</td>
+                        <td>
+                                                            2021-08-31 21:17:14
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124543">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>124545 </td>
+                        <td>
+                            Бар
+                        </td>
+                        <td>Тарас авеню</td>
+                        <td> -</td>
+                        <td>2021-08-31 20:04:53</td>
+                        <td>
+                                                            2021-08-31 23:30:17
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/124545">>>></a>
+                        </td>
+                    </tr>
+                                </tbody>
+
+            </table>
+        </div>
+        <div style="overflow: hidden;">
+        <nav>
+            <ul class="pagination">
+
+                                    <li class="page-item">
+                        <a class="page-link" href="http://tt.bb-crm.com/changes/3121?page=1" rel="prev" aria-label="pagination.previous">&lsaquo;</a>
+                    </li>
+                
+                
+                                    
+                    
+                    
+                                                                                                        <li class="page-item"><a class="page-link" href="http://tt.bb-crm.com/changes/3121?page=1">1</a></li>
+                                                                                                                <li class="page-item active" aria-current="page"><span class="page-link">2</span></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="http://tt.bb-crm.com/changes/3121?page=3">3</a></li>
+                                                                                        
+                
+                                    <li class="page-item">
+                        <a class="page-link" href="http://tt.bb-crm.com/changes/3121?page=3" rel="next" aria-label="pagination.next">&rsaquo;</a>
+                    </li>
+                
+            </ul>
+        </nav>
+    </div>
+
+
+    </div>
+        </section>
+    </div>
+</div>
+</body>
+
+<!-- Mirrored from tt.bb-crm.com/changes/3121?page=2 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 12:39:06 GMT -->
+</html>

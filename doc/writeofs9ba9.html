@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="ru">
+
+<!-- Mirrored from tt.bb-crm.com/doc/writeofs?page=3 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 09:55:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1 , user-scalable=0, shrink-to-fit=no">
+    <meta name="csrf-token" content="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+    <title>BilliardCRM</title>
+
+    
+
+
+    <link rel="stylesheet" href="../old/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../old/bower_components/Ionicons/css/ionicons.min.css">
+
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="../../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="../../cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" media="screen" type="text/css" href="../old/css/demo.css"/>
+    
+
+    <link rel="stylesheet" href="../../cdn.jsdelivr.net/gh/fancyapps/fancybox%403.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="../css/app.css" rel="stylesheet">
+    <link href="../old/css/main.css" rel="stylesheet">
+    <link href="../css/my.css" rel="stylesheet">
+    <script>
+        var LanguneThisJs = 'ru';
+    </script>
+    
+    <script src="../libs/jquery.min.js"></script>
+    <script src="../libs/jquery.fancybox.min.js"></script>
+    <script src="../js/app.js" defer></script>
+
+</head>
+<body class="sidebar-mini">
+<div class="wrapper" id="app">
+    <header class="header__main">
+        <a href="../index.html" class="logo decstor">
+            <span class="logo-mini"><img src="../img/logo%201.png" alt="logo"></span>
+            <span class="logo-lg"><img src="../img/logo%201.png" alt="logo"><span>BilliardCRM</span></span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" id="SidebarToggle" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    
+
+                    <messages-header></messages-header>
+
+                    <li class="calendar-menu  d-none d-md-block ">
+                        <clock-header></clock-header>
+                    </li>
+                    <li class="time-menu  d-none d-md-block "></li>
+                    <li class="locale">
+                        <a class="" href="../customers.html?lng=ua">
+                            <span class="time">UA</span>
+                        </a>
+                    </li>
+                    <li class="locale">
+                        <a class=" active " href="../categories.html?lng=ru">
+                            <span class="time">RU</span>
+                        </a>
+                    </li>
+                                            <li class="user user-menu">
+                            <a href="#">
+                                <span>Aleks Majlo</span>
+                            </a>
+                        </li>
+                                        <li>
+                        <a href="../logout.html"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                           data-toggle="control-sidebar">Выход</a>
+                    </li>
+                    <form id="logout-form" action="http://tt.bb-crm.com/logout" method="POST" style="display: none;">
+                        <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar__main">
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+                <li class="notChild">
+                    <a href="../index.html">
+                        <img src="../img/logo%201.png" alt="logo">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../customers.html">
+                        <img src="../img/menu2.png" alt="База клиентов">
+                        <span>База клиентов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../booking.html">
+                        <img src="../img/menu3.png" alt="Бронирования">
+                        <span> Бронирования</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../table_open.html">
+                        <img src="../img/menu4.png" alt="Открытые столы">
+                        <span>Открытые столы</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="../bars.html">
+                        <img src="../img/menu5.png" alt="Открытые заказы">
+                        <span>Открытые заказы</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu6.png" alt="Конфигурация">
+                        <span>Конфигурация</span>
+                        <span class="pull-right-container">
+							    <i class="fa fa-angle-left pull-right"></i>
+						</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../tables.html">Бильярдные столы</a></li>
+                        <li><a href="../users.html"> Пользователи бэк-офиса</a></li>
+                        <li><a href="../sockets.html">Оборудование</a></li>
+                        
+                        <li><a href="../coupons.html">Купоны</a></li>
+                        <li><a href="../keys.html">Апи ключи</a></li>
+                        <li><a target="__blank" href="../logs.html">Log</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu7.png" alt="Склад">
+                        <span>Cклад</span>
+                        <span class="pull-right-container">
+                                                <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../ingredients.html"> <span>Инградиенты</span></a></li>
+                        <li><a href="../products.html"> <span>Товары</span></a></li>
+                        <li><a href="../categories.html"> <span>Категории</span></a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu8.png" alt="Документы">
+                        <span>Документы</span>
+                        <span class="pull-right-container">
+                                                                   <i class="fa fa-angle-left pull-right"></i>
+                                                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="acts.html">
+                                <span>Акты</span></a>
+                        </li>
+                        <li>
+                            <a href="consignments.html">
+                                <span>Расходные накладные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="purchaseinvoices.html">
+                                <span>Приходная накладная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="writeofs.html">
+                                <span>Списание продуктов</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="notChild">
+                    <a href="../orders.html">
+                        <img src="../img/menu9.png" alt="История заказов">
+                        <span>История заказов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../changes.html">
+                        <img src="../img/menu10.png" alt="Смена">
+                        <span>Смены</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu11.png" alt="Аналитика">
+                        <span>Аналитика</span>
+                        <span class="pull-right-container">
+                                               <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="../analytics/attendance.html">
+                                <span>Посещаемость заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../analytics/popularity-tables.html">
+                                <span>Популярность столов</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../analytics/incomes.html">
+                                <span>Доход заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../analytics/employees.html">
+                                <span>Доход бильярдной по сотрудникам</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class=" wrapper__main">
+        <section class="content__main">
+                <div class="user">
+        <div class="row mb-20">
+            <div class="col-xs-6 col-xs-xs-12">
+                <div class="user__title">
+                    <h2>Списание продуктов</h2>
+                                        <div class="filter-block">
+    <h4>Фильтр</h4>
+    <form class="filter-form" method="get">
+        <div class="row">
+            <div class="col-sm-4 col-xs-xs-xs-12"><label>Начало</label></div>
+            <div class="col-lg-8 col-xs-xs-xs-12">
+                <input type="date"
+                                              name="start"
+                       placeholder="ДД.ММ.ГГГГ">
+            </div>
+
+            <div class="col-sm-4 col-xs-xs-xs-12"><label>Конец</label></div>
+            <div class="col-lg-8 col-xs-xs-xs-12">
+                <input type="date"
+                       placeholder="ДД.ММ.ГГГГ"
+                                              name="end">
+            </div>
+
+            <div class="col-sm-4 col-xs-xs-xs-12"><label>Сотрудник</label></div>
+            <div class="col-lg-8 col-xs-xs-xs-12">
+                <select name="user_id">
+                    <option></option>
+                                            <option                                 value="1">Aleks Majlo</option>
+                                            <option                                 value="2">Александр Степанов</option>
+                                            <option                                 value="38">Юлія Костів</option>
+                                            <option                                 value="39">Сулім Роман</option>
+                                            <option                                 value="40">Марія Сиса (бар)</option>
+                                            <option                                 value="45">Влад Жовнір</option>
+                                            <option                                 value="46">Дарина Цегельник (бар)</option>
+                                            <option                                 value="47">Анастасія Винничук (бар)</option>
+                                            <option                                 value="48">Назар Капустинський маркер</option>
+                                            <option                                 value="50">Оля Собчук</option>
+                                            <option                                 value="51">Альбина Кандабаева</option>
+                                            <option                                 value="52">Катя (бар)</option>
+                                            <option                                 value="53">Вікторія</option>
+                                    </select>
+            </div>
+
+        </div>
+        <div class="buttons">
+            <a class="ResetLink" href="writeofs.html"
+               class="">Очистить            </a>
+            <button>Фильтровать</button>
+        </div>
+    </form>
+</div>
+
+                </div>
+            </div>
+        </div>
+        <div class="blue liken">
+            <a  data-fancybox data-src="#writeofCreate" href="javascript:;" class="overhead__buttom ">
+                <img src="../img/user-plus.png" alt="user-plus">
+                <span> Новое списание</span>
+            </a>
+        </div>
+        <div class="user_table acts__table">
+            <table>
+                <tr class="td-one">
+                    <td>
+                        ID
+                    </td>
+                    <td>
+                        Дата и время инвентаризации                    </td>
+                    <td>
+                        Сотрудник                    </td>
+                </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/269.html">269</a>
+                        </td>
+                        <td>2021-10-02 18:48:25</td>
+                        <td>Оля Собчук</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/268.html">268</a>
+                        </td>
+                        <td>2021-09-30 22:10:13</td>
+                        <td>Оля Собчук</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/267.html">267</a>
+                        </td>
+                        <td>2021-09-30 15:04:01</td>
+                        <td>Оля Собчук</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/266.html">266</a>
+                        </td>
+                        <td>2021-09-25 23:19:16</td>
+                        <td>Марія Сиса (бар)</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/265.html">265</a>
+                        </td>
+                        <td>2021-09-25 13:19:35</td>
+                        <td>Марія Сиса (бар)</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/264.html">264</a>
+                        </td>
+                        <td>2021-09-24 14:25:20</td>
+                        <td>Людмила Павлівна Пост</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/263.html">263</a>
+                        </td>
+                        <td>2021-09-24 14:24:34</td>
+                        <td>Людмила Павлівна Пост</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/262.html">262</a>
+                        </td>
+                        <td>2021-09-23 22:13:40</td>
+                        <td>Оля Собчук</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/261.html">261</a>
+                        </td>
+                        <td>2021-09-23 13:49:48</td>
+                        <td>Оля Собчук</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/260.html">260</a>
+                        </td>
+                        <td>2021-09-21 20:23:41</td>
+                        <td>Дарина Цегельник (бар)</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/259.html">259</a>
+                        </td>
+                        <td>2021-09-18 22:48:48</td>
+                        <td>Марія Сиса (бар)</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/258.html">258</a>
+                        </td>
+                        <td>2021-09-18 02:59:03</td>
+                        <td>Оля Собчук</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/257.html">257</a>
+                        </td>
+                        <td>2021-09-17 21:44:06</td>
+                        <td>Оля Собчук</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/256.html">256</a>
+                        </td>
+                        <td>2021-09-17 21:03:15</td>
+                        <td>Оля Собчук</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/255.html">255</a>
+                        </td>
+                        <td>2021-09-17 16:10:04</td>
+                        <td>Оля Собчук</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/254.html">254</a>
+                        </td>
+                        <td>2021-09-14 20:03:42</td>
+                        <td>Вікторія</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/253.html">253</a>
+                        </td>
+                        <td>2021-09-11 21:45:25</td>
+                        <td>Анастасія Винничук (бар)</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/252.html">252</a>
+                        </td>
+                        <td>2021-09-11 20:50:13</td>
+                        <td>Анастасія Винничук (бар)</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/251.html">251</a>
+                        </td>
+                        <td>2021-09-11 16:16:04</td>
+                        <td>Анастасія Винничук (бар)</td>
+                    </tr>
+                                    <tr>
+                        <td>
+                            <a class="btn " href="writeofs/250.html">250</a>
+                        </td>
+                        <td>2021-09-07 14:15:28</td>
+                        <td>Оля Собчук</td>
+                    </tr>
+                            </table>
+        </div>
+        <div style="overflow: hidden;">
+        <nav>
+            <ul class="pagination">
+
+                                    <li class="page-item">
+                        <a class="page-link" href="writeofs4658.html?page=2" rel="prev" aria-label="pagination.previous">&lsaquo;</a>
+                    </li>
+                
+                
+                                    
+                    
+                    
+                                                                                                        <li class="page-item"><a class="page-link" href="writeofs2679.html?page=1">1</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="writeofs4658.html?page=2">2</a></li>
+                                                                                                                <li class="page-item active" aria-current="page"><span class="page-link">3</span></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="writeofsfdb0.html?page=4">4</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="writeofsaf4d.html?page=5">5</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="writeofsc575.html?page=6">6</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="writeofs235c.html?page=7">7</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="writeofsfdfa.html?page=8">8</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="writeofs0b08.html?page=9">9</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="writeofs1448.html?page=10">10</a></li>
+                                                                                                            
+                                            <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+                    
+                    
+                                                        
+                    
+                    
+                                                                                                        <li class="page-item"><a class="page-link" href="writeofs5760.html?page=15">15</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="writeofs42a7.html?page=16">16</a></li>
+                                                                                        
+                
+                                    <li class="page-item">
+                        <a class="page-link" href="writeofsfdb0.html?page=4" rel="next" aria-label="pagination.next">&rsaquo;</a>
+                    </li>
+                
+            </ul>
+        </nav>
+    </div>
+
+
+    </div>
+    <div  id="writeofCreate" style="display: none" class="FancyWindow">
+    <div class="form-user acts__form over__form">
+        <p class="p"><span class="h4">Новое списание</span></p>
+        <form action="http://tt.bb-crm.com/doc/writeofs" id="writeofsForm" method="post">
+            <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+            <writeof-products causes_string="[&quot;\u0417\u0430\u043c\u0456\u043d\u0430 \u0431\u043e\u0447\u043a\u0438&quot;,&quot;\u0417\u0456\u043f\u0441\u043e\u0432\u0430\u043d\u0438\u0439 \u0442\u043e\u0432\u0430\u0440&quot;]"></writeof-products>
+        </form>
+    </div>
+</div>
+        </section>
+    </div>
+</div>
+</body>
+
+<!-- Mirrored from tt.bb-crm.com/doc/writeofs?page=3 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 09:56:05 GMT -->
+</html>

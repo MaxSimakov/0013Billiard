@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="ru">
+
+<!-- Mirrored from tt.bb-crm.com/doc/purchaseinvoices?page=1 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 10:35:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1 , user-scalable=0, shrink-to-fit=no">
+    <meta name="csrf-token" content="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+    <title>BilliardCRM</title>
+
+    
+
+
+    <link rel="stylesheet" href="../old/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../old/bower_components/Ionicons/css/ionicons.min.css">
+
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="../../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="../../cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" media="screen" type="text/css" href="../old/css/demo.css"/>
+    
+
+    <link rel="stylesheet" href="../../cdn.jsdelivr.net/gh/fancyapps/fancybox%403.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="../css/app.css" rel="stylesheet">
+    <link href="../old/css/main.css" rel="stylesheet">
+    <link href="../css/my.css" rel="stylesheet">
+    <script>
+        var LanguneThisJs = 'ru';
+    </script>
+    
+    <script src="../libs/jquery.min.js"></script>
+    <script src="../libs/jquery.fancybox.min.js"></script>
+    <script src="../js/app.js" defer></script>
+
+</head>
+<body class="sidebar-mini">
+<div class="wrapper" id="app">
+    <header class="header__main">
+        <a href="../index.html" class="logo decstor">
+            <span class="logo-mini"><img src="../img/logo%201.png" alt="logo"></span>
+            <span class="logo-lg"><img src="../img/logo%201.png" alt="logo"><span>BilliardCRM</span></span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" id="SidebarToggle" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    
+
+                    <messages-header></messages-header>
+
+                    <li class="calendar-menu  d-none d-md-block ">
+                        <clock-header></clock-header>
+                    </li>
+                    <li class="time-menu  d-none d-md-block "></li>
+                    <li class="locale">
+                        <a class="" href="../customers.html?lng=ua">
+                            <span class="time">UA</span>
+                        </a>
+                    </li>
+                    <li class="locale">
+                        <a class=" active " href="../categories.html?lng=ru">
+                            <span class="time">RU</span>
+                        </a>
+                    </li>
+                                            <li class="user user-menu">
+                            <a href="#">
+                                <span>Aleks Majlo</span>
+                            </a>
+                        </li>
+                                        <li>
+                        <a href="../logout.html"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                           data-toggle="control-sidebar">Выход</a>
+                    </li>
+                    <form id="logout-form" action="http://tt.bb-crm.com/logout" method="POST" style="display: none;">
+                        <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar__main">
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+                <li class="notChild">
+                    <a href="../index.html">
+                        <img src="../img/logo%201.png" alt="logo">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../customers.html">
+                        <img src="../img/menu2.png" alt="База клиентов">
+                        <span>База клиентов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../booking.html">
+                        <img src="../img/menu3.png" alt="Бронирования">
+                        <span> Бронирования</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../table_open.html">
+                        <img src="../img/menu4.png" alt="Открытые столы">
+                        <span>Открытые столы</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="../bars.html">
+                        <img src="../img/menu5.png" alt="Открытые заказы">
+                        <span>Открытые заказы</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu6.png" alt="Конфигурация">
+                        <span>Конфигурация</span>
+                        <span class="pull-right-container">
+							    <i class="fa fa-angle-left pull-right"></i>
+						</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../tables.html">Бильярдные столы</a></li>
+                        <li><a href="../users.html"> Пользователи бэк-офиса</a></li>
+                        <li><a href="../sockets.html">Оборудование</a></li>
+                        
+                        <li><a href="../coupons.html">Купоны</a></li>
+                        <li><a href="../keys.html">Апи ключи</a></li>
+                        <li><a target="__blank" href="../logs.html">Log</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu7.png" alt="Склад">
+                        <span>Cклад</span>
+                        <span class="pull-right-container">
+                                                <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../ingredients.html"> <span>Инградиенты</span></a></li>
+                        <li><a href="../products.html"> <span>Товары</span></a></li>
+                        <li><a href="../categories.html"> <span>Категории</span></a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu8.png" alt="Документы">
+                        <span>Документы</span>
+                        <span class="pull-right-container">
+                                                                   <i class="fa fa-angle-left pull-right"></i>
+                                                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="acts.html">
+                                <span>Акты</span></a>
+                        </li>
+                        <li>
+                            <a href="consignments.html">
+                                <span>Расходные накладные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="purchaseinvoices.html">
+                                <span>Приходная накладная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="writeofs.html">
+                                <span>Списание продуктов</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="notChild">
+                    <a href="../orders.html">
+                        <img src="../img/menu9.png" alt="История заказов">
+                        <span>История заказов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../changes.html">
+                        <img src="../img/menu10.png" alt="Смена">
+                        <span>Смены</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../img/menu11.png" alt="Аналитика">
+                        <span>Аналитика</span>
+                        <span class="pull-right-container">
+                                               <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="../analytics/attendance.html">
+                                <span>Посещаемость заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../analytics/popularity-tables.html">
+                                <span>Популярность столов</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../analytics/incomes.html">
+                                <span>Доход заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../analytics/employees.html">
+                                <span>Доход бильярдной по сотрудникам</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class=" wrapper__main">
+        <section class="content__main">
+                <div class="user">
+        <div class="row mb-20">
+            <div class="col-xs-6 col-xs-xs-12">
+                <div class="user__title">
+                    <h2>Приходная накладная</h2>
+                                        <div class="filter-block">
+    <h4>Фильтр</h4>
+    <form class="filter-form" method="get">
+        <div class="row">
+            <div class="col-sm-4 col-xs-xs-xs-12"><label>Начало</label></div>
+            <div class="col-lg-8 col-xs-xs-xs-12">
+                <input type="date"
+                                              name="start"
+                       placeholder="ДД.ММ.ГГГГ">
+            </div>
+
+            <div class="col-sm-4 col-xs-xs-xs-12"><label>Конец</label></div>
+            <div class="col-lg-8 col-xs-xs-xs-12">
+                <input type="date"
+                       placeholder="ДД.ММ.ГГГГ"
+                                              name="end">
+            </div>
+
+            <div class="col-sm-4 col-xs-xs-xs-12"><label>Сотрудник</label></div>
+            <div class="col-lg-8 col-xs-xs-xs-12">
+                <select name="user_id">
+                    <option></option>
+                                            <option                                 value="1">Aleks Majlo</option>
+                                            <option                                 value="2">Александр Степанов</option>
+                                            <option                                 value="38">Юлія Костів</option>
+                                            <option                                 value="39">Сулім Роман</option>
+                                            <option                                 value="40">Марія Сиса (бар)</option>
+                                            <option                                 value="45">Влад Жовнір</option>
+                                            <option                                 value="46">Дарина Цегельник (бар)</option>
+                                            <option                                 value="47">Анастасія Винничук (бар)</option>
+                                            <option                                 value="48">Назар Капустинський маркер</option>
+                                            <option                                 value="50">Оля Собчук</option>
+                                            <option                                 value="51">Альбина Кандабаева</option>
+                                            <option                                 value="52">Катя (бар)</option>
+                                            <option                                 value="53">Вікторія</option>
+                                    </select>
+            </div>
+
+        </div>
+        <div class="buttons">
+            <a class="ResetLink" href="purchaseinvoices.html"
+               class="">Очистить            </a>
+            <button>Фильтровать</button>
+        </div>
+    </form>
+</div>
+
+                </div>
+            </div>
+        </div>
+        <div class="blue liken">
+            <a  data-fancybox data-src="#purchaseinvoiceCreate" href="javascript:;" class="overhead__buttom ">
+                <img src="../img/user-plus.png" alt="user-plus">
+                <span> Новая накладная</span>
+            </a>
+        </div>
+        <div class="user_table table-responsive">
+            <table>
+                <thead>
+                    <tr >
+                        <td>
+                            ID
+                        </td>
+                        <td>
+                            Дата и время инвентаризации                        </td>
+                        <td>
+                            Сотрудник                        </td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                                       <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1402.html">1402</a>
+                        </td>
+                        <td>2021-11-08 16:42:43</td>
+                        <td>Оля Собчук</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1401.html">1401</a>
+                        </td>
+                        <td>2021-11-08 11:47:45</td>
+                        <td>Людмила Павлівна Пост</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1400.html">1400</a>
+                        </td>
+                        <td>2021-11-08 11:28:59</td>
+                        <td>Людмила Павлівна Пост</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1399.html">1399</a>
+                        </td>
+                        <td>2021-11-06 18:12:01</td>
+                        <td>Оля Собчук</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1398.html">1398</a>
+                        </td>
+                        <td>2021-11-05 15:11:53</td>
+                        <td>Марія Сиса (бар)</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1397.html">1397</a>
+                        </td>
+                        <td>2021-11-05 14:30:58</td>
+                        <td>Марія Сиса (бар)</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1396.html">1396</a>
+                        </td>
+                        <td>2021-11-05 13:21:27</td>
+                        <td>Людмила Павлівна Пост</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1395.html">1395</a>
+                        </td>
+                        <td>2021-11-05 12:38:54</td>
+                        <td>Людмила Павлівна Пост</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1394.html">1394</a>
+                        </td>
+                        <td>2021-11-05 12:17:21</td>
+                        <td>Марія Сиса (бар)</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1393.html">1393</a>
+                        </td>
+                        <td>2021-11-04 15:10:37</td>
+                        <td>Вікторія</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1392.html">1392</a>
+                        </td>
+                        <td>2021-11-04 14:35:01</td>
+                        <td>Вікторія</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1391.html">1391</a>
+                        </td>
+                        <td>2021-11-04 01:23:25</td>
+                        <td>Марія Сиса (бар)</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1390.html">1390</a>
+                        </td>
+                        <td>2021-11-03 17:26:45</td>
+                        <td>Марія Сиса (бар)</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1389.html">1389</a>
+                        </td>
+                        <td>2021-11-03 11:31:17</td>
+                        <td>Марія Сиса (бар)</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1388.html">1388</a>
+                        </td>
+                        <td>2021-11-03 02:26:36</td>
+                        <td>Вікторія</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1387.html">1387</a>
+                        </td>
+                        <td>2021-11-02 16:55:22</td>
+                        <td>Ірина Ігорівна Пост</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1386.html">1386</a>
+                        </td>
+                        <td>2021-11-02 16:06:50</td>
+                        <td>Вікторія</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1385.html">1385</a>
+                        </td>
+                        <td>2021-11-01 16:31:46</td>
+                        <td>Оля Собчук</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1384.html">1384</a>
+                        </td>
+                        <td>2021-11-01 15:30:23</td>
+                        <td>Оля Собчук</td>
+                    </tr>
+                                     <tr>
+                         <td>
+                            <a class="btn " href="purchaseinvoices/1383.html">1383</a>
+                        </td>
+                        <td>2021-10-31 20:47:47</td>
+                        <td>Оля Собчук</td>
+                    </tr>
+                                </tbody>
+            </table>
+        </div>
+        <div style="overflow: hidden;">
+        <nav>
+            <ul class="pagination">
+
+                                    <li class="page-item disabled" aria-disabled="true" aria-label="pagination.previous">
+                        <span class="page-link" aria-hidden="true">&lsaquo;</span>
+                    </li>
+                
+                
+                                    
+                    
+                    
+                                                                                                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="purchaseinvoices4658.html?page=2">2</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="purchaseinvoices9ba9.html?page=3">3</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="purchaseinvoicesfdb0.html?page=4">4</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="purchaseinvoicesaf4d.html?page=5">5</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="purchaseinvoicesc575.html?page=6">6</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="purchaseinvoices235c.html?page=7">7</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="purchaseinvoicesfdfa.html?page=8">8</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="purchaseinvoices0b08.html?page=9">9</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="purchaseinvoices1448.html?page=10">10</a></li>
+                                                                                                            
+                                            <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+                    
+                    
+                                                        
+                    
+                    
+                                                                                                        <li class="page-item"><a class="page-link" href="purchaseinvoices6c0b.html?page=70">70</a></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="purchaseinvoicesfee1.html?page=71">71</a></li>
+                                                                                        
+                
+                                    <li class="page-item">
+                        <a class="page-link" href="purchaseinvoices4658.html?page=2" rel="next" aria-label="pagination.next">&rsaquo;</a>
+                    </li>
+                
+            </ul>
+        </nav>
+    </div>
+
+
+    </div>
+    <div  id="purchaseinvoiceCreate" style="display: none" class="FancyWindow">
+    <div class="form-user acts__form over__form">
+        <p class="p"><span class="h4">Новая накладная</span></p>
+        <form action="http://tt.bb-crm.com/doc/purchaseinvoices" id="purchaseinvoicesForm" method="post">
+            <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+            <purchaseinvoice-products></purchaseinvoice-products>
+        </form>
+    </div>
+</div>
+        </section>
+    </div>
+</div>
+</body>
+
+<!-- Mirrored from tt.bb-crm.com/doc/purchaseinvoices?page=1 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 10:35:04 GMT -->
+</html>

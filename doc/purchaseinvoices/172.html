@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ru">
+
+<!-- Mirrored from tt.bb-crm.com/doc/purchaseinvoices/172 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 12:02:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1 , user-scalable=0, shrink-to-fit=no">
+    <meta name="csrf-token" content="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+    <title>BilliardCRM</title>
+
+    
+
+
+    <link rel="stylesheet" href="../../old/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../old/bower_components/Ionicons/css/ionicons.min.css">
+
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="../../../code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="../../../cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" media="screen" type="text/css" href="../../old/css/demo.css"/>
+    
+
+    <link rel="stylesheet" href="../../../cdn.jsdelivr.net/gh/fancyapps/fancybox%403.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="../../css/app.css" rel="stylesheet">
+    <link href="../../old/css/main.css" rel="stylesheet">
+    <link href="../../css/my.css" rel="stylesheet">
+    <script>
+        var LanguneThisJs = 'ru';
+    </script>
+    
+    <script src="../../libs/jquery.min.js"></script>
+    <script src="../../libs/jquery.fancybox.min.js"></script>
+    <script src="../../js/app.js" defer></script>
+
+</head>
+<body class="sidebar-mini">
+<div class="wrapper" id="app">
+    <header class="header__main">
+        <a href="../../index.html" class="logo decstor">
+            <span class="logo-mini"><img src="../../img/logo%201.png" alt="logo"></span>
+            <span class="logo-lg"><img src="../../img/logo%201.png" alt="logo"><span>BilliardCRM</span></span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" id="SidebarToggle" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    
+
+                    <messages-header></messages-header>
+
+                    <li class="calendar-menu  d-none d-md-block ">
+                        <clock-header></clock-header>
+                    </li>
+                    <li class="time-menu  d-none d-md-block "></li>
+                    <li class="locale">
+                        <a class="" href="../../customers.html?lng=ua">
+                            <span class="time">UA</span>
+                        </a>
+                    </li>
+                    <li class="locale">
+                        <a class=" active " href="../../categories.html?lng=ru">
+                            <span class="time">RU</span>
+                        </a>
+                    </li>
+                                            <li class="user user-menu">
+                            <a href="#">
+                                <span>Aleks Majlo</span>
+                            </a>
+                        </li>
+                                        <li>
+                        <a href="../../logout.html"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                           data-toggle="control-sidebar">Выход</a>
+                    </li>
+                    <form id="logout-form" action="http://tt.bb-crm.com/logout" method="POST" style="display: none;">
+                        <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar__main">
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+                <li class="notChild">
+                    <a href="../../index.html">
+                        <img src="../../img/logo%201.png" alt="logo">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../../customers.html">
+                        <img src="../../img/menu2.png" alt="База клиентов">
+                        <span>База клиентов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../../booking.html">
+                        <img src="../../img/menu3.png" alt="Бронирования">
+                        <span> Бронирования</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../../table_open.html">
+                        <img src="../../img/menu4.png" alt="Открытые столы">
+                        <span>Открытые столы</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="../../bars.html">
+                        <img src="../../img/menu5.png" alt="Открытые заказы">
+                        <span>Открытые заказы</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../../img/menu6.png" alt="Конфигурация">
+                        <span>Конфигурация</span>
+                        <span class="pull-right-container">
+							    <i class="fa fa-angle-left pull-right"></i>
+						</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../../tables.html">Бильярдные столы</a></li>
+                        <li><a href="../../users.html"> Пользователи бэк-офиса</a></li>
+                        <li><a href="../../sockets.html">Оборудование</a></li>
+                        
+                        <li><a href="../../coupons.html">Купоны</a></li>
+                        <li><a href="../../keys.html">Апи ключи</a></li>
+                        <li><a target="__blank" href="../../logs.html">Log</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../../img/menu7.png" alt="Склад">
+                        <span>Cклад</span>
+                        <span class="pull-right-container">
+                                                <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../../ingredients.html"> <span>Инградиенты</span></a></li>
+                        <li><a href="../../products.html"> <span>Товары</span></a></li>
+                        <li><a href="../../categories.html"> <span>Категории</span></a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../../img/menu8.png" alt="Документы">
+                        <span>Документы</span>
+                        <span class="pull-right-container">
+                                                                   <i class="fa fa-angle-left pull-right"></i>
+                                                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="../acts.html">
+                                <span>Акты</span></a>
+                        </li>
+                        <li>
+                            <a href="../consignments.html">
+                                <span>Расходные накладные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../purchaseinvoices.html">
+                                <span>Приходная накладная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../writeofs.html">
+                                <span>Списание продуктов</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="notChild">
+                    <a href="../../orders.html">
+                        <img src="../../img/menu9.png" alt="История заказов">
+                        <span>История заказов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="../../changes.html">
+                        <img src="../../img/menu10.png" alt="Смена">
+                        <span>Смены</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="../../img/menu11.png" alt="Аналитика">
+                        <span>Аналитика</span>
+                        <span class="pull-right-container">
+                                               <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="../../analytics/attendance.html">
+                                <span>Посещаемость заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../analytics/popularity-tables.html">
+                                <span>Популярность столов</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../analytics/incomes.html">
+                                <span>Доход заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../../analytics/employees.html">
+                                <span>Доход бильярдной по сотрудникам</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class=" wrapper__main">
+        <section class="content__main">
+                <div class="user">
+        <div class="user__title">
+            <h2>Приходная накладная #172 </h2>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-md-7 col-xs-xs-12">
+                <div class="filter-block filter-worker">
+                    <div class="filter-form">
+                        <div class="row">
+                            <div class="col-xs-5 col-xs-xs-xs-6">
+                                <label>Сотрудник</label>
+                            </div>
+                            <div class="col-xs-7 col-xs-xs-xs-6">
+                                <p> Дарина Цегельник (бар)</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-5 col-xs-xs-xs-6">
+                                <label>Дата и время инвентаризации</label>
+                            </div>
+                            <div class="col-xs-7 col-xs-xs-xs-6">
+                                <p>2020-02-14 15:54:15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-5 col-xs-xs-12 actOne">
+                <div class="blue worker">
+                    <form method="get" id="searchform">
+                        <input name="title" type="text" value="">
+                                                <button type="submit">
+                            <img src="../../img/search.png" alt="search">
+                        </button>
+                    </form>
+                    <div class="worker-button">
+                        <a class="worker__button worker__export" href="../purchaseinvoice/export/172.html">
+                            <img src="../../img/export.png" alt="colendar">
+                            <span>Экспорт в excel</span>
+                        </a>
+                        <doc-print id="print"  header="Акт #172  2020-02-14 15:54:15"></doc-print>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                Сортировка:
+                <b>
+                                            Категория                                    </b>
+                -
+                <b>
+                                                                         c последних                                            
+                </b>
+            </div>
+        </div>
+        <div class="user_table table-responsive" id="print">
+            <table>
+
+                <thead>
+                <tr>
+                    <td>
+                        Наименование                        <form style="display:none;" action="http://tt.bb-crm.com/doc/writeof/sort" method="post">
+                            <input type="hidden" name="sort" value="title">
+                            <input type="hidden" name="type" value="">
+                            <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                        </form>
+                                                    <a href="#" data-type="desc" class="DocSortOrder categoryDocSortOrderDESC">
+                                <img src="../../img/arrey.png" alt="arrey">
+                            </a>
+                                            </td>
+                    <td>
+                        Категория                        <form style="display:none;" action="http://tt.bb-crm.com/doc/writeof/sort" method="post">
+                            <input type="hidden" name="sort" value="cat">
+                            <input type="hidden" name="type" value="">
+                            <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                        </form>
+                                                    <a href="#" data-type="desc" class="DocSortOrder categoryDocSortOrderDESC">
+                                <img src="../../img/arrey.png" alt="arrey">
+                            </a>
+                                            </td>
+                    <td>
+                        Тип                        <form style="display:none;" action="http://tt.bb-crm.com/doc/writeof/sort" method="post">
+                            <input type="hidden" name="sort" value="type">
+                            <input type="hidden" name="type" value="">
+                            <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                        </form>
+                                                    <a href="#" data-type="desc" class="DocSortOrder categoryDocSortOrderDESC">
+                                <img src="../../img/arrey.png" alt="arrey">
+                            </a>
+                                            </td>
+                    <td>
+                        Добавлено товаров                    </td>
+
+                </tr>
+                </thead>
+                <tbody>
+                                </tbody>
+
+            </table>
+        </div>
+    </div>
+        </section>
+    </div>
+</div>
+</body>
+
+<!-- Mirrored from tt.bb-crm.com/doc/purchaseinvoices/172 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 12:02:45 GMT -->
+</html>

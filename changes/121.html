@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="ru">
+
+<!-- Mirrored from tt.bb-crm.com/changes/121 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 12:39:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1 , user-scalable=0, shrink-to-fit=no">
+    <meta name="csrf-token" content="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+    <title>BilliardCRM</title>
+
+    
+
+
+    <link rel="stylesheet" href="http://tt.bb-crm.com/old/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://tt.bb-crm.com/old/bower_components/Ionicons/css/ionicons.min.css">
+
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" media="screen" type="text/css" href="http://tt.bb-crm.com/old//css/demo.css"/>
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link href="http://tt.bb-crm.com/css/app.css" rel="stylesheet">
+    <link href="http://tt.bb-crm.com/old/css/main.css" rel="stylesheet">
+    <link href="http://tt.bb-crm.com/css/my.css" rel="stylesheet">
+    <script>
+        var LanguneThisJs = 'ru';
+    </script>
+    
+    <script src="http://tt.bb-crm.com/libs/jquery.min.js"></script>
+    <script src="http://tt.bb-crm.com/libs/jquery.fancybox.min.js"></script>
+    <script src="http://tt.bb-crm.com/js/app.js" defer></script>
+
+</head>
+<body class="sidebar-mini">
+<div class="wrapper" id="app">
+    <header class="header__main">
+        <a href="http://tt.bb-crm.com/" class="logo decstor">
+            <span class="logo-mini"><img src="http://tt.bb-crm.com/img/logo 1.png" alt="logo"></span>
+            <span class="logo-lg"><img src="http://tt.bb-crm.com/img/logo 1.png" alt="logo"><span>BilliardCRM</span></span>
+        </a>
+        <nav class="navbar navbar-static-top">
+            <a href="#" id="SidebarToggle" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    
+
+                    <messages-header></messages-header>
+
+                    <li class="calendar-menu  d-none d-md-block ">
+                        <clock-header></clock-header>
+                    </li>
+                    <li class="time-menu  d-none d-md-block "></li>
+                    <li class="locale">
+                        <a class="" href="http://tt.bb-crm.com/sessionLng?lng=ua">
+                            <span class="time">UA</span>
+                        </a>
+                    </li>
+                    <li class="locale">
+                        <a class=" active " href="http://tt.bb-crm.com/sessionLng?lng=ru">
+                            <span class="time">RU</span>
+                        </a>
+                    </li>
+                                            <li class="user user-menu">
+                            <a href="#">
+                                <span>Aleks Majlo</span>
+                            </a>
+                        </li>
+                                        <li>
+                        <a href="http://tt.bb-crm.com/logout"
+                           onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                           data-toggle="control-sidebar">Выход</a>
+                    </li>
+                    <form id="logout-form" action="http://tt.bb-crm.com/logout" method="POST" style="display: none;">
+                        <input type="hidden" name="_token" value="XBx3oOkTJY5TZyVYngTS0YzdTEZeToxpIXN7VYwh">
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <aside class="sidebar__main">
+        <section class="sidebar">
+            <ul class="sidebar-menu" data-widget="tree">
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/">
+                        <img src="http://tt.bb-crm.com/img/logo 1.png" alt="logo">
+                        <span>Главная</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/customers">
+                        <img src="http://tt.bb-crm.com/img/menu2.png" alt="База клиентов">
+                        <span>База клиентов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/booking">
+                        <img src="http://tt.bb-crm.com/img/menu3.png" alt="Бронирования">
+                        <span> Бронирования</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/table_open">
+                        <img src="http://tt.bb-crm.com/img/menu4.png" alt="Открытые столы">
+                        <span>Открытые столы</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="http://tt.bb-crm.com/bars">
+                        <img src="http://tt.bb-crm.com/img/menu5.png" alt="Открытые заказы">
+                        <span>Открытые заказы</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="http://tt.bb-crm.com/img/menu6.png" alt="Конфигурация">
+                        <span>Конфигурация</span>
+                        <span class="pull-right-container">
+							    <i class="fa fa-angle-left pull-right"></i>
+						</span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="http://tt.bb-crm.com/tables">Бильярдные столы</a></li>
+                        <li><a href="http://tt.bb-crm.com/users"> Пользователи бэк-офиса</a></li>
+                        <li><a href="http://tt.bb-crm.com/sockets">Оборудование</a></li>
+                        
+                        <li><a href="http://tt.bb-crm.com/coupons">Купоны</a></li>
+                        <li><a href="http://tt.bb-crm.com/keys">Апи ключи</a></li>
+                        <li><a target="__blank" href="http://tt.bb-crm.com/logs">Log</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="http://tt.bb-crm.com/img/menu7.png" alt="Склад">
+                        <span>Cклад</span>
+                        <span class="pull-right-container">
+                                                <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="http://tt.bb-crm.com/ingredients"> <span>Инградиенты</span></a></li>
+                        <li><a href="http://tt.bb-crm.com/products"> <span>Товары</span></a></li>
+                        <li><a href="http://tt.bb-crm.com/categories"> <span>Категории</span></a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="http://tt.bb-crm.com/img/menu8.png" alt="Документы">
+                        <span>Документы</span>
+                        <span class="pull-right-container">
+                                                                   <i class="fa fa-angle-left pull-right"></i>
+                                                                </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="http://tt.bb-crm.com/doc/acts">
+                                <span>Акты</span></a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/doc/consignments">
+                                <span>Расходные накладные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/doc/purchaseinvoices">
+                                <span>Приходная накладная</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/doc/writeofs">
+                                <span>Списание продуктов</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/orders">
+                        <img src="http://tt.bb-crm.com/img/menu9.png" alt="История заказов">
+                        <span>История заказов</span>
+                    </a>
+                </li>
+                <li class="notChild">
+                    <a href="http://tt.bb-crm.com/changes">
+                        <img src="http://tt.bb-crm.com/img/menu10.png" alt="Смена">
+                        <span>Смены</span>
+                    </a>
+                </li>
+                <li class="treeview">
+                    <a href="#">
+                        <img src="http://tt.bb-crm.com/img/menu11.png" alt="Аналитика">
+                        <span>Аналитика</span>
+                        <span class="pull-right-container">
+                                               <i class="fa fa-angle-left pull-right"></i>
+                                            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li>
+                            <a href="http://tt.bb-crm.com/analytics/attendance">
+                                <span>Посещаемость заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/analytics/popularity-tables">
+                                <span>Популярность столов</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/analytics/incomes">
+                                <span>Доход заведения</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://tt.bb-crm.com/analytics/employees">
+                                <span>Доход бильярдной по сотрудникам</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </aside>
+    <div class=" wrapper__main">
+        <section class="content__main">
+                <div class="user">
+        <div class="user__title">
+            <h2>Смена #121</h2>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-7">
+                <div class="filter-block filter-order">
+                    <form class="filter-form">
+                        <div class="row">
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Пользователь</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>Юлія Костів</p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Старт смены</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>2019-12-11 10:38:08</p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Окончание изменения</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                     2019-12-12 00:31:30
+                                </p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Клиентов</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    30
+                                </p>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Наличными</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    3548 ₴
+                                </p>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Картой</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    0 ₴
+                                </p>
+                            </div>
+
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Заработанно</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    3548 ₴
+                                </p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Сума на начало</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    0 ₴
+                                </p>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <label>Сума на закрытие</label>
+                            </div>
+                            <div class="col-sm-3 col-xs-xs-6">
+                                <p>
+                                    3548 ₴
+                                </p>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="table_user table-responsive">
+            <table>
+                <thead>
+                <tr class="td-one">
+                    <td>#</td>
+                    <td>Тип</td>
+                    <td>Комментарий</td>
+                    <td>Столы</td>
+                    <td>Дата начала</td>
+                    <td>Дата закрытия</td>
+                    <td>Сумма</td>
+                    <td></td>
+                </tr>
+                </thead>
+
+                <tbody>
+                                    <tr>
+                        <td>2754 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №9 російський більярд</td>
+                        <td>2019-12-11 12:35:40</td>
+                        <td>
+                                                            2019-12-11 13:39:19
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2754">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2755 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №6 російський більярд</td>
+                        <td>2019-12-11 12:58:21</td>
+                        <td>
+                                                            2019-12-11 15:53:28
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2755">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2756 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №8 російський більярд</td>
+                        <td>2019-12-11 12:58:53</td>
+                        <td>
+                                                            2019-12-11 14:20:37
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2756">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2757 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №4 снукер</td>
+                        <td>2019-12-11 13:41:30</td>
+                        <td>
+                                                            2019-12-11 14:51:10
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2757">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2758 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №11 російський більярд</td>
+                        <td>2019-12-11 13:46:34</td>
+                        <td>
+                                                            2019-12-11 15:33:59
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2758">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2759 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №10 російський більярд</td>
+                        <td>2019-12-11 15:15:23</td>
+                        <td>
+                                                            2019-12-11 16:06:03
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2759">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2760 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №4 снукер</td>
+                        <td>2019-12-11 15:28:03</td>
+                        <td>
+                                                            2019-12-11 17:03:13
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2760">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2761 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №9 російський більярд</td>
+                        <td>2019-12-11 15:48:59</td>
+                        <td>
+                                                            2019-12-11 17:21:19
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2761">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2762 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №10 російський більярд</td>
+                        <td>2019-12-11 16:46:29</td>
+                        <td>
+                                                            2019-12-11 19:20:18
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2762">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2763 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №2 пул</td>
+                        <td>2019-12-11 17:45:23</td>
+                        <td>
+                                                            2019-12-11 20:04:51
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2763">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2764 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №8 російський більярд</td>
+                        <td>2019-12-11 18:05:33</td>
+                        <td>
+                                                            2019-12-11 20:22:14
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2764">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2765 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №7 російський більярд</td>
+                        <td>2019-12-11 18:10:57</td>
+                        <td>
+                                                            2019-12-11 18:54:23
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2765">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2766 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №4 снукер</td>
+                        <td>2019-12-11 18:33:27</td>
+                        <td>
+                                                            2019-12-11 19:47:26
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2766">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2767 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №6 російський більярд</td>
+                        <td>2019-12-11 18:52:23</td>
+                        <td>
+                                                            2019-12-11 21:16:24
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2767">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2768 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №12 російський більярд</td>
+                        <td>2019-12-11 18:53:39</td>
+                        <td>
+                                                            2019-12-11 19:41:21
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2768">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2769 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №11 російський більярд</td>
+                        <td>2019-12-11 18:57:10</td>
+                        <td>
+                                                            2019-12-11 20:24:00
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2769">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2770 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №9 російський більярд</td>
+                        <td>2019-12-11 19:02:32</td>
+                        <td>
+                                                            2019-12-11 21:14:36
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2770">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2771 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №7 російський більярд</td>
+                        <td>2019-12-11 19:39:34</td>
+                        <td>
+                                                            2019-12-11 22:28:55
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2771">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2772 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №12 російський більярд</td>
+                        <td>2019-12-11 20:04:03</td>
+                        <td>
+                                                            2019-12-11 21:59:48
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2772">>>></a>
+                        </td>
+                    </tr>
+                                    <tr>
+                        <td>2773 </td>
+                        <td>
+                            Бильярд
+                        </td>
+                        <td></td>
+                        <td> №10 російський більярд</td>
+                        <td>2019-12-11 20:31:54</td>
+                        <td>
+                                                            2019-12-11 21:56:09
+                                                    </td>
+                        <td>
+                                                    </td>
+                        <td>
+                            <a href="http://tt.bb-crm.com/orders/2773">>>></a>
+                        </td>
+                    </tr>
+                                </tbody>
+
+            </table>
+        </div>
+        <div style="overflow: hidden;">
+        <nav>
+            <ul class="pagination">
+
+                                    <li class="page-item disabled" aria-disabled="true" aria-label="pagination.previous">
+                        <span class="page-link" aria-hidden="true">&lsaquo;</span>
+                    </li>
+                
+                
+                                    
+                    
+                    
+                                                                                                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                                                                                                <li class="page-item"><a class="page-link" href="http://tt.bb-crm.com/changes/121?page=2">2</a></li>
+                                                                                        
+                
+                                    <li class="page-item">
+                        <a class="page-link" href="http://tt.bb-crm.com/changes/121?page=2" rel="next" aria-label="pagination.next">&rsaquo;</a>
+                    </li>
+                
+            </ul>
+        </nav>
+    </div>
+
+
+    </div>
+        </section>
+    </div>
+</div>
+</body>
+
+<!-- Mirrored from tt.bb-crm.com/changes/121 by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Nov 2021 12:39:19 GMT -->
+</html>
