@@ -282,7 +282,7 @@
 		--bs-gutter-x: 20px;
 }
 .sOrder__col {
-		width: 45%;
+		width: 547px;
 }
 .sOrder__btn {
 		position: absolute;
@@ -343,7 +343,7 @@
 		-webkit-transform: translateX(-50%);
 		        transform: translateX(-50%);
 }
-.sOrder__table {
+.sOrder__item {
 		position: relative;
 		overflow: hidden;
 		background-color: #ffffff;
@@ -352,58 +352,88 @@
 		border-radius: 16px;
 		padding: 30px 0 40px;
 }
-.sOrder__table table {
+.sOrder__item .sOrder__table-top {
+		margin-bottom: 80px;
+}
+.sOrder__item .sOrder__table-top table {
 		width: 100%;
 		font-weight: bold;
 		font-size: 16px;
 		line-height: calc(19 / 16);
-		text-align: center;
-		margin-bottom: 80px;
 }
-.sOrder__table table tr {
+.sOrder__item .sOrder__table-top table tr {
 		border-bottom: 1px solid #bdbdbd;
 }
-.sOrder__table table tr:last-of-type {
+.sOrder__item .sOrder__table-top table tr:last-of-type {
 		border: none;
 }
-.sOrder__table table tr:last-of-type td {
+.sOrder__item .sOrder__table-top table tr:last-of-type td {
 		padding-bottom: 0;
 }
-.sOrder__table table th {
+.sOrder__item .sOrder__table-top table th {
 		color: #777777;
 		padding: 10px;
 		padding-bottom: 11px;
 		padding-top: 0;
 		white-space: nowrap;
 }
-.sOrder__table table th:last-of-type {
+.sOrder__item .sOrder__table-top table th:nth-child(2) {
+		text-align: center;
+}
+.sOrder__item .sOrder__table-top table th:last-of-type {
 		text-align: right;
 		padding-right: 19px;
 }
-.sOrder__table table th:first-of-type {
-		text-align: left;
+.sOrder__item .sOrder__table-top table th:first-of-type {
 		padding-left: 19px;
 		white-space: initial;
 }
-.sOrder__table table td {
+.sOrder__item .sOrder__table-top table td {
 		padding: 10px;
 		padding-top: 14px;
 		padding-bottom: 14px;
 		white-space: nowrap;
 }
-.sOrder__table table td:last-of-type {
+.sOrder__item .sOrder__table-top table td:last-of-type {
 		text-align: right;
 		padding-right: 19px;
 }
-.sOrder__table table td:first-of-type {
+.sOrder__item .sOrder__table-top table td:first-of-type {
 		text-align: left;
 		padding-left: 19px;
 		white-space: initial;
 }
-.sOrder__table form {
+.sOrder__item .sOrder__table-footer {
+		margin-bottom: 60px;
+}
+.sOrder__item .sOrder__table-footer table {
+		width: 100%;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: calc(21 / 18);
+}
+.sOrder__item .sOrder__table-footer table tr:first-of-type td {
+		padding-bottom: 38px;
+}
+.sOrder__item .sOrder__table-footer table td {
+		padding-left: 10px;
+		padding-right: 10px;
+}
+.sOrder__item .sOrder__table-footer table td:last-of-type {
+		text-align: right;
+		padding-right: 19px;
+}
+.sOrder__item .sOrder__table-footer table td:first-of-type {
+		font-weight: normal;
+		color: #777777;
+		text-align: left;
+		padding-left: 19px;
+		white-space: initial;
+}
+.sOrder__item form {
 		margin-bottom: 0;
 }
-.sOrder__table textarea {
+.sOrder__item textarea {
 		display: block;
 		resize: none;
 		width: 90%;
@@ -414,4 +444,27 @@
 		border-color: #b7b7b7;
 		border-radius: 16px;
 		padding: 15px 20px;
+		margin-bottom: 75px;
+}
+.sOrder__result {
+		padding: 0 19px;
+}
+.sOrder__result button {
+		width: 158px;
+		height: 53px;
+		border-radius: 8px;
+		font-weight: 500;
+		font-size: 22px;
+		line-height: calc(26 / 22);
+}
+.sOrder__price {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: calc(28 / 24);
+		color: #8c8c8c;
+}
+.sOrder__price span {
+		font-weight: bold;
+		color: #000000;
+		margin-left: 8px;
 }

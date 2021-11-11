@@ -165,50 +165,65 @@ script(src='js/app.js', defer)
 			.container-fluid
 				.row
 					.sOrder__col.col-auto
-						.sOrder__table
+						.sOrder__item
 							form
 								a.sOrder__btn.btn.btn-warning(href="#")
 									img(src="img/arrow-back.svg", alt="")
 								h2 Заказ №12345
-								table
-									tr
-										th Наименования:
-										th Кол-во:
-										th Цена:
-										th Общая стоимость:
-									tr
-										td Кофе
-										td 
-											.sOrder__btns
-												button.btn.btn-warning
-													span.minus
-												span 5
-												button.btn.btn-warning
-													span.plus
-										td 20 руб.
-										td 20 руб.
-									tr
-										td Кофе Латте
-										td 
-											.sOrder__btns
-												button.btn.btn-warning
-													span.minus
-												span 10
-												button.btn.btn-warning
-													span.plus
-										td 40 руб.
-										td 40 руб.
-									tr
-										td Кофе с молоком
-										td 
-											.sOrder__btns
-												button.btn.btn-warning
-													span.minus
-												span 1
-												button.btn.btn-warning
-													span.plus
-										td 40 руб.
-										td 40 руб.
+								.sOrder__table-top
+									table
+										tr
+											th Наименования:
+											th Кол-во:
+											th Цена:
+											th Общая стоимость:
+										tr
+											td Кофе
+											td 
+												.sOrder__btns
+													button.btn.btn-warning
+														span.minus
+													span 5
+													button.btn.btn-warning
+														span.plus
+											td 20 руб.
+											td 20 руб.
+										tr
+											td Кофе Латте
+											td 
+												.sOrder__btns
+													button.btn.btn-warning
+														span.minus
+													span 10
+													button.btn.btn-warning
+														span.plus
+											td 40 руб.
+											td 40 руб.
+										tr
+											td Кофе с молоком
+											td 
+												.sOrder__btns
+													button.btn.btn-warning
+														span.minus
+													span 1
+													button.btn.btn-warning
+														span.plus
+											td 40 руб.
+											td 40 руб.
 								textarea(name='comment' placeholder='Комментарий к заказу')
-									
+								.sOrder__table-footer
+									table
+										tr
+											td(colspan="2") Итого:
+											td 100 руб.
+										tr
+											td Размер скидки:
+											td 10%
+											td 10 руб.
+								.sOrder__result
+									.row.align-items-center
+										.col
+											.sOrder__price Итого к оплате: #[span 90 руб.]
+										.col-auto
+											button.btn.btn-warning Оплатить
 					.col

@@ -94,51 +94,76 @@
       <div class="container-fluid">
         <div class="row">
           <div class="sOrder__col col-auto">
-            <div class="sOrder__table">
+            <div class="sOrder__item">
               <form><a class="sOrder__btn btn btn-warning" href="#"><img src="img/arrow-back.svg" alt=""/></a>
                 <h2>Заказ №12345</h2>
-                <table>
-                  <tr>
-                    <th>Наименования:</th>
-                    <th>Кол-во:</th>
-                    <th>Цена:</th>
-                    <th>Общая стоимость:</th>
-                  </tr>
-                  <tr>
-                    <td>Кофе</td>
-                    <td> 
-                      <div class="sOrder__btns">
-                        <button class="btn btn-warning"><span class="minus"></span></button><span>5</span>
-                        <button class="btn btn-warning"><span class="plus"></span></button>
-                      </div>
-                    </td>
-                    <td>20 руб.</td>
-                    <td>20 руб.</td>
-                  </tr>
-                  <tr>
-                    <td>Кофе Латте</td>
-                    <td> 
-                      <div class="sOrder__btns">
-                        <button class="btn btn-warning"><span class="minus"></span></button><span>10</span>
-                        <button class="btn btn-warning"><span class="plus"></span></button>
-                      </div>
-                    </td>
-                    <td>40 руб.</td>
-                    <td>40 руб.</td>
-                  </tr>
-                  <tr>
-                    <td>Кофе с молоком</td>
-                    <td> 
-                      <div class="sOrder__btns">
-                        <button class="btn btn-warning"><span class="minus"></span></button><span>1</span>
-                        <button class="btn btn-warning"><span class="plus"></span></button>
-                      </div>
-                    </td>
-                    <td>40 руб.</td>
-                    <td>40 руб.</td>
-                  </tr>
-                </table>
+                <div class="sOrder__table-top">
+                  <table>
+                    <tr>
+                      <th>Наименования:</th>
+                      <th>Кол-во:</th>
+                      <th>Цена:</th>
+                      <th>Общая стоимость:</th>
+                    </tr>
+                    <tr>
+                      <td>Кофе</td>
+                      <td> 
+                        <div class="sOrder__btns">
+                          <button class="btn btn-warning"><span class="minus"></span></button><span>5</span>
+                          <button class="btn btn-warning"><span class="plus"></span></button>
+                        </div>
+                      </td>
+                      <td>20 руб.</td>
+                      <td>20 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>Кофе Латте</td>
+                      <td> 
+                        <div class="sOrder__btns">
+                          <button class="btn btn-warning"><span class="minus"></span></button><span>10</span>
+                          <button class="btn btn-warning"><span class="plus"></span></button>
+                        </div>
+                      </td>
+                      <td>40 руб.</td>
+                      <td>40 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>Кофе с молоком</td>
+                      <td> 
+                        <div class="sOrder__btns">
+                          <button class="btn btn-warning"><span class="minus"></span></button><span>1</span>
+                          <button class="btn btn-warning"><span class="plus"></span></button>
+                        </div>
+                      </td>
+                      <td>40 руб.</td>
+                      <td>40 руб.</td>
+                    </tr>
+                  </table>
+                </div>
                 <textarea name="comment" placeholder="Комментарий к заказу"></textarea>
+                <div class="sOrder__table-footer">
+                  <table>
+                    <tr>
+                      <td colspan="2">Итого:</td>
+                      <td>100 руб.</td>
+                    </tr>
+                    <tr>
+                      <td>Размер скидки:</td>
+                      <td>10%</td>
+                      <td>10 руб.</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="sOrder__result">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <div class="sOrder__price">Итого к оплате: <span>90 руб.</span></div>
+                    </div>
+                    <div class="col-auto">
+                      <button class="btn btn-warning">Оплатить</button>
+                    </div>
+                  </div>
+                </div>
               </form>
             </div>
           </div>
