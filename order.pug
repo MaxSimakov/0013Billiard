@@ -243,7 +243,11 @@ script(src='js/app.js', defer)
 							button 
 								//- img(src="img/search-1.svg", alt="")
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" xml:space="preserve"><path d="M389.9 143.6c145 0 263 117.9 263 263 0 49-13.9 97.1-40.2 139.1l-23.8 38-33.6 27.2c-47.4 38.5-104.5 58.7-165.4 58.7-145 0-263-117.9-263-263s118-263 263-263zm0-116.9C180.1 26.7 10 196.8 10 406.6c0 209.9 170.1 380 379.9 380 90.7 0 173.8-31.9 239.1-84.8 3 5.3 5.7 10.7 10.2 15.2l236.6 236.7c13.1 13 30.2 19.6 47.3 19.6 17.1 0 34.2-6.5 47.3-19.7 26.1-26.1 26.1-68.5 0-94.6L733.8 622.3c-6.5-6.5-13.9-11.3-22-14.6 36.6-58.3 58-127.1 58-201.1 0-209.8-170-379.9-379.9-379.9z"/></svg>
-						.breadcrumbs Меню Кофе
+						nav(aria-label='breadcrumbs')
+							ul.breadcrumbs
+								li.breadcrumbs__item
+									a(href='#') Меню
+								li.breadcrumbs__item.active(aria-current='page') Кофе
 						.sOrder-menu
 							.row
 								.col-6
@@ -251,18 +255,22 @@ script(src='js/app.js', defer)
 										h5 Кофе
 										.sOrder-menu__img-wrap
 											img(src="img/sOpenOrders-2.jpg", alt="")
+											span 223
 								.col-6
 									.sOrder-menu__item
 										h5 Кофе с молоком
 										.sOrder-menu__img-wrap
 											img(src="img/sOpenOrders-1.jpg", alt="")
+											span 223
 								.col-6
 									.sOrder-menu__item
 										h5 Кофе
 										.sOrder-menu__img-wrap
 											img(src="img/sOpenOrders-2.jpg", alt="")
+											span 223
 								.col-6
 									.sOrder-menu__item
 										h5 Кофе с молоком
 										.sOrder-menu__img-wrap
 											img(src="img/sOpenOrders-1.jpg", alt="")
+											span 223
