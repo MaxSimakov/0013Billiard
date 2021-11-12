@@ -167,7 +167,7 @@ script(src='js/app.js', defer)
 					.sOrder__col.col-auto
 						.sOrder__item
 							form
-								a.sOrder__btn.btn.btn-warning(href="#")
+								a.sOrder__btn-back.btn.btn-warning(href="#")
 									img(src="img/arrow-back.svg", alt="")
 								h2 Заказ №12345
 								.sOrder__table-top
@@ -180,7 +180,7 @@ script(src='js/app.js', defer)
 										tr
 											td Кофе
 											td 
-												.sOrder__btns
+												.sOrder__quantity
 													button.btn.btn-warning
 														span.minus
 													span 5
@@ -191,7 +191,7 @@ script(src='js/app.js', defer)
 										tr
 											td Кофе Латте
 											td 
-												.sOrder__btns
+												.sOrder__quantity
 													button.btn.btn-warning
 														span.minus
 													span 10
@@ -202,7 +202,7 @@ script(src='js/app.js', defer)
 										tr
 											td Кофе с молоком
 											td 
-												.sOrder__btns
+												.sOrder__quantity
 													button.btn.btn-warning
 														span.minus
 													span 1
@@ -220,6 +220,17 @@ script(src='js/app.js', defer)
 											td Размер скидки:
 											td 10%
 											td 10 руб.
+								.sOrder__buttons
+									.row
+										.col
+											button.sOrder__btn.btn.btn-outline-primary
+												img(src="img/menu.png", alt="")
+										.col
+											button.sOrder__btn.btn.btn-outline-primary
+												img(src="img/bank-check.png", alt="")
+										.col
+											button.sOrder__btn.btn.btn-outline-primary
+												img(src="img/discount.png", alt="")
 								.sOrder__result
 									.row.align-items-center
 										.col
