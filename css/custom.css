@@ -491,3 +491,107 @@
 		-webkit-box-shadow: 0px 0px 6px 3px rgba(21, 73, 159, 0.3);
 		        box-shadow: 0px 0px 6px 3px rgba(21, 73, 159, 0.3);
 }
+.sOrder__buttons .sOrder__btn img {
+		width: 40px;
+		height: 40px;
+}
+.sOrder__search {
+		position: relative;
+}
+.sOrder__search input {
+		--s: 0.26s;
+		-webkit-transition: all var(--s) ease-in-out;
+		transition: all var(--s) ease-in-out;
+		display: block;
+		width: 100%;
+		padding: 14.5px 20px 14.5px 70px;
+		-webkit-box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+		        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+		font-weight: 500;
+		border: none;
+}
+.sOrder__search input:hover, .sOrder__search input:focus {
+		-webkit-box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.2);
+		        box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.2);
+}
+.sOrder__search button {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin-top: auto;
+		margin-bottom: auto;
+		left: 33px;
+		padding: 0;
+		width: 28px;
+		height: 28px;
+		border: none;
+		outline: none;
+		background-color: transparent;
+}
+.sOrder__search button svg {
+		--s: 0.26s;
+		-webkit-transition: all var(--s) ease-in-out;
+		transition: all var(--s) ease-in-out;
+		pointer-events: none;
+		width: 100%;
+		height: 100%;
+		fill: currentColor;
+}
+.sOrder__search button:hover {
+		color: #15499f;
+}
+
+.breadcrumbs {
+		margin-top: 17px;
+		margin-bottom: 17px;
+}
+
+.sOrder-menu .row {
+		--bs-gutter-x: 20px;
+		--bs-gutter-y: var(--bs-gutter-x);
+}
+.sOrder-menu__item {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		padding: 4% 9% 5.5%;
+		-webkit-box-shadow: 4px 4px 20px 4px rgba(0, 0, 0, 0.25);
+		        box-shadow: 4px 4px 20px 4px rgba(0, 0, 0, 0.25);
+		height: 100%;
+}
+.sOrder-menu__item h5 {
+		text-transform: uppercase;
+		text-align: center;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 19px;
+		margin-bottom: 8px;
+		-webkit-box-flex: 1;
+		    -ms-flex-positive: 1;
+		        flex-grow: 1;
+}
+.sOrder-menu__img-wrap {
+		display: block;
+		position: relative;
+		--ratio: 1/1;
+}
+.sOrder-menu__img-wrap::before {
+		content: "";
+		position: relative;
+		height: 0;
+		display: block;
+		padding-bottom: calc(var(--ratio) * 100%);
+}
+.sOrder-menu__img-wrap img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		-o-object-fit: cover;
+		   object-fit: cover;
+}
