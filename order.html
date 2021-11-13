@@ -93,129 +93,154 @@
     <section class="sOrder">
       <div class="container-fluid">
         <div class="row">
-          <div class="sOrder__col col-auto">
-            <div class="sOrder__item">
-              <form><a class="sOrder__btn-back btn btn-warning" href="#"><img src="img/arrow-back.svg" alt=""/></a>
-                <h2>Заказ №12345</h2>
-                <div class="sOrder__table-top">
-                  <table>
-                    <tr>
-                      <th>Наименования:</th>
-                      <th>Кол-во:</th>
-                      <th>Цена:</th>
-                      <th>Общая стоимость:</th>
-                    </tr>
-                    <tr>
-                      <td>Кофе</td>
-                      <td> 
-                        <div class="sOrder__quantity">
-                          <button class="btn btn-warning"><span class="minus"></span></button><span>5</span>
-                          <button class="btn btn-warning"><span class="plus"></span></button>
-                        </div>
-                      </td>
-                      <td>20 руб.</td>
-                      <td>20 руб.</td>
-                    </tr>
-                    <tr>
-                      <td>Кофе Латте</td>
-                      <td> 
-                        <div class="sOrder__quantity">
-                          <button class="btn btn-warning"><span class="minus"></span></button><span>10</span>
-                          <button class="btn btn-warning"><span class="plus"></span></button>
-                        </div>
-                      </td>
-                      <td>40 руб.</td>
-                      <td>40 руб.</td>
-                    </tr>
-                    <tr>
-                      <td>Кофе с молоком</td>
-                      <td> 
-                        <div class="sOrder__quantity">
-                          <button class="btn btn-warning"><span class="minus"></span></button><span>1</span>
-                          <button class="btn btn-warning"><span class="plus"></span></button>
-                        </div>
-                      </td>
-                      <td>40 руб.</td>
-                      <td>40 руб.</td>
-                    </tr>
-                  </table>
-                </div>
-                <textarea name="comment" placeholder="Комментарий к заказу"></textarea>
-                <div class="sOrder__table-footer">
-                  <table>
-                    <tr>
-                      <td colspan="2">Итого:</td>
-                      <td>100 руб.</td>
-                    </tr>
-                    <tr>
-                      <td>Размер скидки:</td>
-                      <td>10%</td>
-                      <td>10 руб.</td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="sOrder__buttons">
-                  <div class="row">
-                    <div class="col">
-                      <button class="sOrder__btn btn btn-outline-primary"><img src="img/menu.png" alt=""/></button>
-                    </div>
-                    <div class="col">
-                      <button class="sOrder__btn btn btn-outline-primary"><img src="img/bank-check.png" alt=""/></button>
-                    </div>
-                    <div class="col">
-                      <button class="sOrder__btn btn btn-outline-primary"><img src="img/discount.png" alt=""/></button>
-                    </div>
-                  </div>
-                </div>
-                <div class="sOrder__result">
-                  <div class="row align-items-center">
-                    <div class="col">
-                      <div class="sOrder__price">Итого к оплате: <span>90 руб.</span></div>
-                    </div>
-                    <div class="col-auto">
-                      <button class="btn btn-warning">Оплатить</button>
-                    </div>
-                  </div>
-                </div>
-              </form>
+          <div class="col-xl">
+            <div class="sOrder__heading">
+              <div class="sOrder__search">
+                <input type="search" name="search" placeholder="Поиск" aria-label="Search"/>
+                <button>
+                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" xml:space="preserve"><path d="M389.9 143.6c145 0 263 117.9 263 263 0 49-13.9 97.1-40.2 139.1l-23.8 38-33.6 27.2c-47.4 38.5-104.5 58.7-165.4 58.7-145 0-263-117.9-263-263s118-263 263-263zm0-116.9C180.1 26.7 10 196.8 10 406.6c0 209.9 170.1 380 379.9 380 90.7 0 173.8-31.9 239.1-84.8 3 5.3 5.7 10.7 10.2 15.2l236.6 236.7c13.1 13 30.2 19.6 47.3 19.6 17.1 0 34.2-6.5 47.3-19.7 26.1-26.1 26.1-68.5 0-94.6L733.8 622.3c-6.5-6.5-13.9-11.3-22-14.6 36.6-58.3 58-127.1 58-201.1 0-209.8-170-379.9-379.9-379.9z"/></svg></button>
+              </div>
+              <nav aria-label="breadcrumbs">
+                <ul class="breadcrumbs">
+                  <li class="breadcrumbs__item"><a href="#">Меню</a></li>
+                  <li class="breadcrumbs__item active" aria-current="page">Кофе</li>
+                </ul>
+              </nav>
             </div>
-          </div>
-          <div class="col">
-            <div class="sOrder__search">
-              <input type="search" name="search" placeholder="Поиск" aria-label="Search"/>
-              <button>
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" xml:space="preserve"><path d="M389.9 143.6c145 0 263 117.9 263 263 0 49-13.9 97.1-40.2 139.1l-23.8 38-33.6 27.2c-47.4 38.5-104.5 58.7-165.4 58.7-145 0-263-117.9-263-263s118-263 263-263zm0-116.9C180.1 26.7 10 196.8 10 406.6c0 209.9 170.1 380 379.9 380 90.7 0 173.8-31.9 239.1-84.8 3 5.3 5.7 10.7 10.2 15.2l236.6 236.7c13.1 13 30.2 19.6 47.3 19.6 17.1 0 34.2-6.5 47.3-19.7 26.1-26.1 26.1-68.5 0-94.6L733.8 622.3c-6.5-6.5-13.9-11.3-22-14.6 36.6-58.3 58-127.1 58-201.1 0-209.8-170-379.9-379.9-379.9z"/></svg></button>
-            </div>
-            <nav aria-label="breadcrumbs">
-              <ul class="breadcrumbs">
-                <li class="breadcrumbs__item"><a href="#">Меню</a></li>
-                <li class="breadcrumbs__item active" aria-current="page">Кофе</li>
-              </ul>
-            </nav>
             <div class="sOrder-menu">
               <div class="row">
-                <div class="col-6">
+                <div class="col-auto col-sm-6 col-md-4 col-xl-6">
                   <div class="sOrder-menu__item">
                     <h5>Кофе</h5>
                     <div class="sOrder-menu__img-wrap"><img src="img/sOpenOrders-2.jpg" alt=""/><span>223</span></div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-auto col-sm-6 col-md-4 col-xl-6">
                   <div class="sOrder-menu__item">
                     <h5>Кофе с молоком</h5>
                     <div class="sOrder-menu__img-wrap"><img src="img/sOpenOrders-1.jpg" alt=""/><span>223</span></div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-auto col-sm-6 col-md-4 col-xl-6">
                   <div class="sOrder-menu__item">
                     <h5>Кофе</h5>
                     <div class="sOrder-menu__img-wrap"><img src="img/sOpenOrders-2.jpg" alt=""/><span>223</span></div>
                   </div>
                 </div>
-                <div class="col-6">
+                <div class="col-auto col-sm-6 col-md-4 col-xl-6">
                   <div class="sOrder-menu__item">
                     <h5>Кофе с молоком</h5>
                     <div class="sOrder-menu__img-wrap"><img src="img/sOpenOrders-1.jpg" alt=""/><span>223</span></div>
+                  </div>
+                </div>
+                <div class="col-auto col-sm-6 col-md-4 col-xl-6">
+                  <div class="sOrder-menu__item">
+                    <h5>Кофе</h5>
+                    <div class="sOrder-menu__img-wrap"><img src="img/sOpenOrders-2.jpg" alt=""/><span>223</span></div>
+                  </div>
+                </div>
+                <div class="col-auto col-sm-6 col-md-4 col-xl-6">
+                  <div class="sOrder-menu__item">
+                    <h5>Кофе с молоком</h5>
+                    <div class="sOrder-menu__img-wrap"><img src="img/sOpenOrders-1.jpg" alt=""/><span>223</span></div>
+                  </div>
+                </div>
+                <div class="col-auto col-sm-6 col-md-4 col-xl-6">
+                  <div class="sOrder-menu__item">
+                    <h5>Кофе</h5>
+                    <div class="sOrder-menu__img-wrap"><img src="img/sOpenOrders-2.jpg" alt=""/><span>223</span></div>
+                  </div>
+                </div>
+                <div class="col-auto col-sm-6 col-md-4 col-xl-6">
+                  <div class="sOrder-menu__item">
+                    <h5>Кофе с молоком</h5>
+                    <div class="sOrder-menu__img-wrap"><img src="img/sOpenOrders-1.jpg" alt=""/><span>223</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sOrder__col col-xl-auto order-xl-first">
+            <div class="sOrder__item"><a class="sOrder__btn-back btn btn-warning" href="#"><img src="img/arrow-back.svg" alt=""/></a>
+              <h2>Заказ №12345</h2>
+              <div class="sOrder__table-top">
+                <table>
+                  <tr>
+                    <th>Наименования:</th>
+                    <th>Кол-во:</th>
+                    <th>Цена:</th>
+                    <th class="d-none d-lg-block">Общая стоимость:</th>
+                    <th class="d-lg-none">Итого:</th>
+                  </tr>
+                  <tr>
+                    <td>Кофе</td>
+                    <td> 
+                      <div class="sOrder__quantity">
+                        <button class="btn btn-warning"><span class="minus"></span></button><span>5</span>
+                        <button class="btn btn-warning"><span class="plus"></span></button>
+                      </div>
+                    </td>
+                    <td>20 руб.</td>
+                    <td>20 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>Кофе Латте</td>
+                    <td> 
+                      <div class="sOrder__quantity">
+                        <button class="btn btn-warning"><span class="minus"></span></button><span>10</span>
+                        <button class="btn btn-warning"><span class="plus"></span></button>
+                      </div>
+                    </td>
+                    <td>40 руб.</td>
+                    <td>40 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>Кофе с молоком</td>
+                    <td> 
+                      <div class="sOrder__quantity">
+                        <button class="btn btn-warning"><span class="minus"></span></button><span>1</span>
+                        <button class="btn btn-warning"><span class="plus"></span></button>
+                      </div>
+                    </td>
+                    <td>40 руб.</td>
+                    <td>40 руб.</td>
+                  </tr>
+                </table>
+              </div>
+              <textarea name="comment" placeholder="Комментарий к заказу"></textarea>
+              <div class="sOrder__table-footer">
+                <table>
+                  <tr>
+                    <td>Итого:</td>
+                    <td colspan="2">100 руб.</td>
+                  </tr>
+                  <tr>
+                    <td>Размер скидки:</td>
+                    <td>10%</td>
+                    <td>10 руб.</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="sOrder__buttons">
+                <div class="row">
+                  <div class="col">
+                    <button class="sOrder__btn btn btn-outline-primary"><img src="img/menu.png" alt=""/></button>
+                  </div>
+                  <div class="col">
+                    <button class="sOrder__btn btn btn-outline-primary"><img src="img/bank-check.png" alt=""/></button>
+                  </div>
+                  <div class="col">
+                    <button class="sOrder__btn btn btn-outline-primary"><img src="img/discount.png" alt=""/></button>
+                  </div>
+                </div>
+              </div>
+              <div class="sOrder__result">
+                <div class="row align-items-center">
+                  <div class="col">
+                    <div class="sOrder__price"> <span class="d-none d-sm-inline">Итого к оплате:</span><span class="d-sm-none">К оплате:</span><span>90 руб.</span></div>
+                  </div>
+                  <div class="col-auto">
+                    <button class="btn btn-warning">Оплатить</button>
                   </div>
                 </div>
               </div>
