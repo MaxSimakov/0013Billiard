@@ -13,8 +13,14 @@
 }
 
 .sOpenOrders {
+		--itemW: 220px;
 		padding-top: 38px;
 		padding-bottom: 50px;
+}
+@media (min-width: 1200px) {
+		.sOpenOrders {
+				--itemW: 262px;
+		}
 }
 .sOpenOrders > .container-fluid {
 		max-width: 1165px;

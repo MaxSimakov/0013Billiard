@@ -87,10 +87,10 @@
 }
 
 .sOpenOrders {
-	// --itemW: 220px;
-	// @media (min-width: 1200px) {
-	// 	--itemW: 262px;
-	// }
+	--itemW: 220px;
+	@media (min-width: 1200px) {
+		--itemW: 262px;
+	}
 	padding-top: 38px;
 	padding-bottom: 50px;
 	& > .container-fluid {
